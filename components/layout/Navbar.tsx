@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
 
@@ -21,8 +22,18 @@ export const Navbar = () => {
       <Container>
         <nav className="flex items-center justify-between py-4" aria-label="Global">
           <div className="flex lg:flex-1">
-            <Link href="/" className="-m-1.5 p-1.5 text-2xl font-bold tracking-tight text-red-700">
-              NAPOLI <span className="text-zinc-900">CATERING CO.</span>
+            <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
+              <div className="relative h-10 w-10 overflow-hidden rounded-full border border-zinc-200 shadow-sm">
+                <Image
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F936526a7c48b486caffea9a56a0ec167?format=webp&width=800&height=1200"
+                  alt="Napoli Catering Co. Logo"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <span className="text-xl font-bold tracking-tight text-red-700">
+                NAPOLI <span className="text-zinc-900">CATERING CO.</span>
+              </span>
             </Link>
           </div>
           
