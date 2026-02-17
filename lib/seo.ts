@@ -17,9 +17,11 @@ export const getMetadata = ({
 }: SeoProps): Metadata => {
   const siteName = "Napoli Catering Co.";
   const fullTitle = `${title} | ${siteName}`;
-  const url = `${process.env.NEXT_PUBLIC_SITE_URL || "https://napolicateringco.nl"}${path}`;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://napolicateringco.nl";
+  const url = `${baseUrl}${path}`;
 
   return {
+    metadataBase: new URL(baseUrl),
     title: fullTitle,
     description,
     alternates: {
