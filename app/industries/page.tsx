@@ -93,7 +93,7 @@ export default function IndustriesPage() {
                 >
                   {!item.icon && <div className="absolute inset-0 bg-black/40 z-0" />}
                   {item.icon ? (
-                    <img src={item.icon} className="h-64 w-auto relative z-10" alt={`${item.title} icon`} />
+                    <img src={item.icon} className="h-48 w-auto relative z-10" alt={`${item.title} icon`} />
                   ) : (
                     <span className="relative z-10">{item.title} Context</span>
                   )}
