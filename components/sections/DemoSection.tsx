@@ -41,6 +41,15 @@ export const DemoSection = () => {
             ))}
           </div>
 
+          <div className="relative aspect-video max-w-4xl mx-auto mb-16 rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
+            <Image
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fb058fcc307c9493e8c34df05a584e016?format=webp&width=1600&height=1200"
+              alt="Live tasting demo with professional oven"
+              fill
+              className="object-cover"
+            />
+          </div>
+
           <Button href="/book-a-demo" size="lg" variant="premium">
             Book a Live Demo
           </Button>
