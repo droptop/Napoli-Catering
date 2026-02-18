@@ -36,46 +36,46 @@ export const Footer = () => {
       <Container>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
           <div className="col-span-2 lg:col-span-1">
-            <Link href="/" className="text-xl font-bold tracking-tight text-white uppercase">
-              NAPOLI <span className="text-red-600">CATERING CO.</span>
+            <Link href="/" className="font-serif text-xl tracking-tight text-white uppercase font-light">
+              NAPOLI <span className="text-[#c5a059]">CATERING CO.</span>
             </Link>
-            <p className="mt-4 text-sm text-zinc-400 leading-6 max-w-xs">
+            <p className="mt-4 text-sm text-zinc-500 leading-6 max-w-xs font-light">
               Professional Neapolitan catering equipment and premium ingredients for the Dutch market. One stop shop for commercial pizza ovens and bulk supply.
             </p>
           </div>
           
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider">Products</h3>
+            <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Products</h3>
             <ul className="mt-4 space-y-2">
               {navigation.products.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.href} className="text-sm text-zinc-400 hover:text-white transition-colors">
+                  <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
                     {item.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-          
+
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider">Services</h3>
+            <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Services</h3>
             <ul className="mt-4 space-y-2">
               {navigation.services.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.href} className="text-sm text-zinc-400 hover:text-white transition-colors">
+                  <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
                     {item.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-          
+
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider">Company</h3>
+            <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Company</h3>
             <ul className="mt-4 space-y-2">
               {navigation.company.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.href} className="text-sm text-zinc-400 hover:text-white transition-colors">
+                  <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
                     {item.name}
                   </Link>
                 </li>

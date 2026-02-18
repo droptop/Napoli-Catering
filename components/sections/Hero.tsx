@@ -21,58 +21,50 @@ export const Hero: React.FC<HeroProps> = ({
   secondaryCtaLink,
 }) => {
   return (
-    <section className="relative overflow-hidden pt-24 pb-32 lg:pt-32 lg:pb-48">
-      {/* Background Decorative Element */}
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(45%_45%_at_50%_50%,rgba(185,28,28,0.05)_0%,transparent_100%)]" />
+    <section className="relative overflow-hidden pt-32 pb-48 lg:pt-48 lg:pb-64 bg-zinc-950">
+      {/* Premium Background: Wood/Heritage Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fbcc909982e1e49609241be4fcdf9e20d?format=webp&width=1600&height=1200"
+          alt="Napoli Catering Heritage Wood"
+          fill
+          className="object-cover opacity-50 grayscale"
+          priority
+        />
+        {/* Dark Vignette Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/80 to-transparent" />
+      </div>
 
-      <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div className="max-w-2xl">
-            <h1 className="text-5xl font-extrabold tracking-tight text-zinc-900 sm:text-7xl lg:text-8xl leading-[1.1]">
-              {title}
-            </h1>
-            <p className="mt-8 text-xl text-zinc-600 leading-relaxed">
-              {subtitle}
-            </p>
-            <div className="mt-12 flex flex-wrap gap-4">
-              <Button href={primaryCtaLink} size="lg">
-                {primaryCtaLabel}
-              </Button>
-              <Button href={secondaryCtaLink} variant="outline" size="lg">
-                {secondaryCtaLabel}
-              </Button>
-            </div>
-
-            <div className="mt-16 flex flex-wrap items-center gap-x-8 gap-y-4 text-sm font-semibold text-zinc-500">
-              <span className="flex items-center gap-1">
-                <svg className="h-5 w-5 text-green-600" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
-                </svg>
-                Fast delivery in NL
-              </span>
-              <span className="flex items-center gap-1">
-                <svg className="h-5 w-5 text-green-600" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
-                </svg>
-                Business invoicing
-              </span>
-              <span className="flex items-center gap-1">
-                <svg className="h-5 w-5 text-green-600" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" />
-                </svg>
-                Bulk orders
-              </span>
-            </div>
+      <Container className="relative z-10">
+        <div className="max-w-3xl">
+          <h1 className="font-serif text-6xl font-light tracking-tight text-white sm:text-7xl lg:text-8xl leading-[1.05]">
+            {title}
+          </h1>
+          <p className="mt-8 text-xl text-zinc-300 max-w-2xl leading-relaxed font-light">
+            {subtitle}
+          </p>
+          <div className="mt-12 flex flex-wrap gap-4">
+            <Button href={primaryCtaLink} size="lg" variant="premium">
+              {primaryCtaLabel}
+            </Button>
+            <Button href={secondaryCtaLink} variant="outline" size="lg" className="text-white border-zinc-700 hover:bg-zinc-800">
+              {secondaryCtaLabel}
+            </Button>
           </div>
 
-          <div className="relative aspect-[4/5] w-full max-w-md mx-auto lg:max-w-none rounded-3xl overflow-hidden shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 border-8 border-white">
-            <Image
-              src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F936526a7c48b486caffea9a56a0ec167?format=webp&width=800&height=1200"
-              alt="Authentic Neapolitan Pizza"
-              fill
-              className="object-cover"
-              priority
-            />
+          <div className="mt-16 flex flex-wrap items-center gap-x-8 gap-y-4 text-sm font-semibold text-zinc-400 uppercase tracking-widest">
+            <span className="flex items-center gap-2">
+              <div className="h-1.5 w-1.5 rounded-full bg-[#c5a059]" />
+              Fast delivery in NL
+            </span>
+            <span className="flex items-center gap-2">
+              <div className="h-1.5 w-1.5 rounded-full bg-[#c5a059]" />
+              Business invoicing
+            </span>
+            <span className="flex items-center gap-2">
+              <div className="h-1.5 w-1.5 rounded-full bg-[#c5a059]" />
+              Bulk orders
+            </span>
           </div>
         </div>
       </Container>

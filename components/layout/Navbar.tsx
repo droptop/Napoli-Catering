@@ -18,12 +18,12 @@ export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-md border-b border-zinc-100">
+    <header className="fixed inset-x-0 top-0 z-50 bg-white/10 backdrop-blur-lg border-b border-white/10">
       <Container>
         <nav className="flex items-center justify-between py-4" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
-              <div className="relative h-10 w-10 overflow-hidden rounded-full border border-zinc-200 shadow-sm">
+              <div className="relative h-10 w-10 overflow-hidden rounded-full border border-[#c5a059]/30 shadow-sm">
                 <Image
                   src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F936526a7c48b486caffea9a56a0ec167?format=webp&width=800&height=1200"
                   alt="Napoli Catering Co. Logo"
@@ -31,8 +31,8 @@ export const Navbar = () => {
                   className="object-cover"
                 />
               </div>
-              <span className="text-xl font-bold tracking-tight text-red-700">
-                NAPOLI <span className="text-zinc-900">CATERING CO.</span>
+              <span className="font-serif text-xl tracking-tight text-white uppercase font-light">
+                NAPOLI <span className="text-[#c5a059]">CATERING CO.</span>
               </span>
             </Link>
           </div>
@@ -61,15 +61,15 @@ export const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-semibold leading-6 text-zinc-900 hover:text-red-700 transition-colors"
+                className="text-xs font-semibold uppercase tracking-widest leading-6 text-white/70 hover:text-[#c5a059] transition-colors"
               >
                 {item.name}
               </Link>
             ))}
           </div>
-          
+
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Button href="/contact" size="sm">
+            <Button href="/contact" size="sm" variant="premium">
               Request a Quote
             </Button>
           </div>
