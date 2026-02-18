@@ -19,7 +19,8 @@ const industries = [
   {
     title: "Catering Companies",
     problem: "High labour pressure during events. Event-based demand fluctuations. Logistics complexity of frozen products.",
-    solution: "Consistent, high-quality output regardless of event scale. Ambient storage removes the need for refrigerated transport. High margin potential for corporate and private events."
+    solution: "Consistent, high-quality output regardless of event scale. Ambient storage removes the need for refrigerated transport. High margin potential for corporate and private events.",
+    icon: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F6d3d9c2cd4cb49ad98e34fc5ff9a474b?format=webp&width=800&height=1200"
   },
   {
     title: "Bars & Hospitality Venues",
