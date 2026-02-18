@@ -159,16 +159,47 @@ export default function AboutPage() {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
-                  { title: "Expert Support", desc: "Helping you optimise your pizza-making process with technical guidance." },
-                  { title: "Reliable Delivery", desc: "Fast & reliable logistics so your operations never miss a beat." },
-                  { title: "Premium Ingredients", desc: "Access to the highest grade products sourced directly for professional use." },
-                  { title: "State-of-the-Art Equipment", desc: "High-heat performance ovens and tools built for durability and precision." }
+                  {
+                    title: "Expert Support",
+                    desc: "Helping you optimise your pizza-making process with technical guidance.",
+                    icon: (
+                      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 12.728l-3.536-3.536M12 3v4m0 10v4m9-9h-4M7 12H3m8 0a1 1 0 112 0 1 1 0 01-2 0z" />
+                      </svg>
+                    )
+                  },
+                  {
+                    title: "Reliable Delivery",
+                    desc: "Fast & reliable logistics so your operations never miss a beat.",
+                    icon: (
+                      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    )
+                  },
+                  {
+                    title: "Premium Ingredients",
+                    desc: "Access to the highest grade products sourced directly for professional use.",
+                    icon: (
+                      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.286-6.857L1 12l7.714-2.143L11 3z" />
+                      </svg>
+                    )
+                  },
+                  {
+                    title: "State-of-the-Art Equipment",
+                    desc: "High-heat performance ovens and tools built for durability and precision.",
+                    icon: (
+                      <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    )
+                  }
                 ].map((point, index) => (
                   <div key={index} className="flex flex-col items-center text-center gap-4">
-                    <div className="h-10 w-10 rounded-full bg-[#c5a059]/10 flex items-center justify-center shrink-0">
-                      <svg className="h-5 w-5 text-[#c5a059]" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
+                    <div className="h-10 w-10 rounded-full bg-[#c5a059]/10 flex items-center justify-center shrink-0 text-[#c5a059]">
+                      {point.icon}
                     </div>
                     <div>
                       <h4 className="font-bold text-white uppercase tracking-widest text-sm mb-2">{point.title}</h4>
