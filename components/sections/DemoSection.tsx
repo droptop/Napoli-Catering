@@ -52,21 +52,24 @@ export const DemoSection = () => {
                 title: "Cooking guidance",
                 description: "Technical setup and oven temperature optimization.",
                 icon: (
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 21c-4.418 0-8-3.582-8-8 0-3.314 2.686-6 6-6V5a2 2 0 114 0v2c3.314 0 6 2.686 6 6 0 4.418-3.582 8-8 8zM9 21h6m-3-14V5" />
-                  </svg>
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F48c2a17073b54abfaec28a7c30352265?format=webp&width=800&height=1200"
+                    alt="Cooking guidance"
+                    className="h-8 w-auto brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
+                    style={{ filter: 'sepia(100%) saturate(300%) brightness(70%) hue-rotate(5deg)' }}
+                  />
                 )
               },
               {
                 title: "Implementation support",
                 description: "Advice on workflow and menu integration.",
                 icon: (
-                  <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m11 17 2 2 6-6" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m18 14 2.5 2.5a3.3 3.3 0 0 0 4.5-4.5l-8-8a3 3 0 0 0-4 0l-3 3a3 3 0 0 0 0 4l.1.1" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m17 11-2.5 2.5a3.3 3.3 0 0 1-4.5-4.5l8-8a3 3 0 0 1 4 0l3 3a3 3 0 0 1 0 4l-.1.1" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m7 7-2 2-4 4a3.3 3.3 0 0 0 4.5 4.5l7-7" />
-                  </svg>
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fbeeb5cb799ad4ac0bf86919d48f79e35?format=webp&width=800&height=1200"
+                    alt="Implementation support"
+                    className="h-8 w-auto brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
+                    style={{ filter: 'sepia(100%) saturate(300%) brightness(70%) hue-rotate(5deg)' }}
+                  />
                 )
               }
             ].map((item, index) => (
