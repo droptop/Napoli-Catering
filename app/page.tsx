@@ -245,6 +245,7 @@ export default function Home() {
         subtitle="Contact our commercial team today for a live demo or request detailed product information."
         ctaLabel="Book a Tasting Demo"
         ctaLink="/book-a-demo"
+        variant="flat"
       />
     </main>
   );
