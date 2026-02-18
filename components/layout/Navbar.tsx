@@ -18,7 +18,14 @@ export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-white/10 backdrop-blur-lg border-b border-white/10">
+    <header
+      className="fixed inset-x-0 top-0 z-50 border-b border-white/10"
+      style={{
+        backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F9df4bea3fa854026915b80c60ccba98b?format=webp')`,
+        backgroundRepeat: 'repeat',
+        backgroundSize: '300px' // Adjust size for a nice tiled look
+      }}
+    >
       <Container>
         <nav className="flex items-center justify-between py-4" aria-label="Global">
           <div className="flex lg:flex-1">
