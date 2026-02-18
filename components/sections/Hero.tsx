@@ -48,21 +48,30 @@ export const Hero: React.FC<HeroProps> = ({
 
       <Container className="relative z-10">
         <div className="max-w-3xl">
-          <h1 className="font-serif text-6xl font-light tracking-tight text-white sm:text-7xl lg:text-8xl leading-[1.05]">
-            {title}
-          </h1>
-          <p className="mt-8 text-xl text-zinc-300 max-w-2xl leading-relaxed font-light">
-            {subtitle}
-          </p>
-          <div className="mt-12 flex flex-wrap gap-4">
-            <Button href={primaryCtaLink} size="lg" variant="premium">
-              {primaryCtaLabel}
-            </Button>
-            {secondaryCtaLabel && secondaryCtaLink && (
-              <Button href={secondaryCtaLink} variant="outline" size="lg" className="text-white border-zinc-700 hover:bg-zinc-800">
-                {secondaryCtaLabel}
+          <div className="flex gap-6 sm:gap-8 items-stretch mb-8">
+            <div className="flex shrink-0">
+              <div className="w-[2px] bg-[#008C45]" />
+              <div className="w-[2px] bg-[#F4F5F0]" />
+              <div className="w-[2px] bg-[#CD212A]" />
+            </div>
+            <h1 className="font-serif text-6xl font-light tracking-tight text-white sm:text-7xl lg:text-8xl leading-[1.05]">
+              {title}
+            </h1>
+          </div>
+          <div className="pl-[30px] sm:pl-[38px]">
+            <p className="text-xl text-zinc-300 max-w-2xl leading-relaxed font-light">
+              {subtitle}
+            </p>
+            <div className="mt-12 flex flex-wrap gap-4">
+              <Button href={primaryCtaLink} size="lg" variant="premium">
+                {primaryCtaLabel}
               </Button>
-            )}
+              {secondaryCtaLabel && secondaryCtaLink && (
+                <Button href={secondaryCtaLink} variant="outline" size="lg" className="text-white border-zinc-700 hover:bg-zinc-800">
+                  {secondaryCtaLabel}
+                </Button>
+              )}
+            </div>
           </div>
         </div>
       </Container>
