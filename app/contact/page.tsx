@@ -3,8 +3,8 @@ import { ContactForm } from "@/components/ContactForm";
 import { getMetadata } from "@/lib/seo";
 
 export const metadata = getMetadata({
-  title: "Contact & Product Inquiries | Napoli Catering Co.",
-  description: "Get in touch for technical product information, wholesale pricing, or general B2B inquiries about our Neapolitan sourdough bases.",
+  title: "Contact & Product Enquiries | Napoli Catering Co.",
+  description: "Get in touch for technical product information, wholesale pricing, or general B2B enquiries about our Neapolitan sourdough bases.",
   path: "/contact",
 });
 
@@ -28,7 +28,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
             <h1 className="text-4xl font-serif font-light tracking-tight text-white sm:text-6xl mb-8 uppercase tracking-widest leading-tight">
-              Commercial Inquiries
+              Commercial Enquiries
             </h1>
             <p className="text-xl text-zinc-300 leading-relaxed mb-12 font-light">
               Whether you're looking for detailed technical specifications, wholesale pricing, or supply logistics for your venue, our team is ready to support your commercial requirements.
@@ -43,7 +43,7 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-widest text-[#c5a059] mb-2 border-b border-white/5 pb-2">Business Support</h3>
                 <p className="text-white font-medium text-sm italic">Monday — Friday: 09:00 — 18:00 (CET)</p>
-                <p className="text-zinc-400 text-sm mt-1 font-light">We prioritize responses to registered hospitality businesses within 24 hours.</p>
+                <p className="text-zinc-400 text-sm mt-1 font-light">We prioritise responses to registered hospitality businesses within 24 hours.</p>
               </div>
 
               <div>
