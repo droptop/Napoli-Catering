@@ -76,30 +76,61 @@ export default function AboutPage() {
       <section className="py-24 bg-zinc-900 border-y border-white/5">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
-              <h2 className="text-3xl font-serif font-light text-white mb-8 uppercase tracking-widest">Main Offering</h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div className="space-y-8">
+              <h2 className="text-3xl font-serif font-light text-white mb-12 uppercase tracking-widest">Main Offering</h2>
+              <div className="flex flex-col gap-6">
                 {[
                   {
                     title: "Dough Balls & Pizza Bases",
-                    desc: "Fresh, high-quality Neapolitan & sourdough options for artisan-style pizzas."
+                    desc: "Fresh, high-quality Neapolitan & sourdough options for artisan-style pizzas.",
+                    icon: (
+                      <svg className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <circle cx="12" cy="12" r="9" strokeWidth="1.5" />
+                        <path strokeLinecap="round" strokeWidth="1.5" d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" strokeOpacity="0.3" />
+                        <circle cx="8" cy="10" r="1.5" strokeWidth="1" />
+                        <circle cx="15" cy="14" r="1" strokeWidth="1" />
+                        <circle cx="12" cy="12" r="1" strokeWidth="1" />
+                      </svg>
+                    )
                   },
                   {
                     title: "Specialised Ovens",
-                    desc: "State-of-the-art equipment designed for the perfect Neapolitan pizza bake."
+                    desc: "State-of-the-art equipment designed for the perfect Neapolitan pizza bake.",
+                    icon: (
+                      <svg className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <rect x="3" y="5" width="18" height="14" rx="2" strokeWidth="1.5" />
+                        <path strokeLinecap="round" strokeWidth="1.5" d="M7 15h10M7 12h10M3 9h18M6 18v1m12-1v1" />
+                      </svg>
+                    )
                   },
                   {
                     title: "Neapolitan Ingredients",
-                    desc: "Full range of top-tier ingredients for an authentic Italian taste."
+                    desc: "Full range of top-tier ingredients for an authentic Italian taste.",
+                    icon: (
+                      <svg className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        <circle cx="12" cy="14" r="3" strokeWidth="1.5" />
+                      </svg>
+                    )
                   },
                   {
                     title: "Premium Burger Buns",
-                    desc: "High-quality buns for the perfect complement to your menu."
+                    desc: "High-quality buns for the perfect complement to your menu.",
+                    icon: (
+                      <svg className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M4 12h16M4 9c0-2.2 3.6-4 8-4s8 1.8 8 4v3H4V9zm0 6h16c0 2.2-3.6 4-8 4s-8-1.8-8-4v-3z" />
+                      </svg>
+                    )
                   }
                 ].map((item, index) => (
-                  <div key={index} className="bg-white/5 p-6 border border-white/10 rounded-xl">
-                    <h3 className="text-[#c5a059] font-bold text-sm uppercase tracking-widest mb-2">{item.title}</h3>
-                    <p className="text-zinc-400 text-sm font-light leading-relaxed">{item.desc}</p>
+                  <div key={index} className="flex items-start gap-6 bg-white/5 p-8 border border-white/10 rounded-2xl transition-all duration-300 hover:bg-white/10 group">
+                    <div className="h-14 w-14 rounded-full border-2 border-[#c5a059] flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 transition-transform bg-[#c5a059]/5">
+                      {item.icon}
+                    </div>
+                    <div>
+                      <h3 className="text-[#c5a059] font-bold text-sm uppercase tracking-widest mb-2">{item.title}</h3>
+                      <p className="text-white font-light text-sm leading-relaxed">{item.desc}</p>
+                    </div>
                   </div>
                 ))}
               </div>
