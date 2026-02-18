@@ -28,13 +28,20 @@ export default function AboutPage() {
 
         <Container className="relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h1 className="text-4xl font-serif font-light tracking-tight text-white sm:text-6xl mb-8 uppercase tracking-widest leading-tight">
-                Rooted in Napoli, serving the Netherlands.
-              </h1>
-              <p className="text-xl text-zinc-300 leading-relaxed font-light">
-                Napoli Catering Co. was founded to bridge the gap between ancient Italian tradition and the modern Dutch hospitality industry. We specialize in providing the foundations for authentic Neapolitan pizza.
-              </p>
+            <div className="flex gap-6 sm:gap-8 items-stretch">
+              <div className="flex shrink-0">
+                <div className="w-[2px] bg-[#008C45]" />
+                <div className="w-[2px] bg-[#F4F5F0]" />
+                <div className="w-[2px] bg-[#CD212A]" />
+              </div>
+              <div>
+                <h1 className="text-4xl font-serif font-light tracking-tight text-white sm:text-6xl mb-8 uppercase tracking-widest leading-tight">
+                  Rooted in Napoli, serving the Netherlands.
+                </h1>
+                <p className="text-xl text-zinc-300 leading-relaxed font-light">
+                  Napoli Catering Co. was founded to bridge the gap between ancient Italian tradition and the modern Dutch hospitality industry. We specialize in providing the foundations for authentic Neapolitan pizza.
+                </p>
+              </div>
             </div>
             <div className="flex justify-center">
               <img
