@@ -48,7 +48,7 @@ export default function AboutPage() {
                  className="max-w-full h-auto grayscale opacity-60"
                />
             </div>
-            <div>
+            <div className="lg:border-l lg:border-[#c5a059] lg:pl-16">
               <h2 className="text-3xl font-serif font-light text-white mb-6 uppercase tracking-widest">Our Mission</h2>
               <p className="text-zinc-400 text-lg leading-relaxed mb-6 font-light">
                 We believe that authenticity shouldn't be a luxury reserved for the few. Our mission is to empower professional kitchens across the NL to serve true Neapolitan sourdough pizza without the complexity of traditional dough preparation.

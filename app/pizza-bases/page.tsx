@@ -106,6 +106,19 @@ export default function PizzaBasesPage() {
         </Container>
       </section>
 
+      {/* Kitchen Icon Section */}
+      <section className="py-12 bg-zinc-950">
+        <Container>
+          <div className="flex justify-center">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F4c350f0d3bb94fe2af8a18b297bfd5e8?format=webp&width=800&height=1200"
+              alt="Kitchen infrastructure icon"
+              className="h-48 w-auto opacity-80"
+            />
+          </div>
+        </Container>
+      </section>
+
       {/* Operational Integration */}
       <section className="py-24 bg-zinc-950">
         <Container>
