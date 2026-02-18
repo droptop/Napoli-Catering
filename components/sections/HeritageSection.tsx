@@ -4,10 +4,10 @@ import { Container } from '../ui/Container';
 export const HeritageSection = () => {
   return (
     <section className="py-32 bg-[#fcfaf7] overflow-hidden relative">
-      <div className="absolute inset-0 z-0 opacity-[0.12] grayscale pointer-events-none"
+      <div className="absolute inset-0 z-0 opacity-[0.20] grayscale pointer-events-none"
         style={{
           backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fcfdac20eee0749ec933ad9d776b0491d?format=webp&width=1600&height=1200')`,
-          backgroundSize: 'contain',
+          backgroundSize: '40%',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
