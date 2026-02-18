@@ -15,21 +15,34 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main>
+    <main className="relative">
       <OrganizationJsonLd />
       <LocalBusinessJsonLd />
-      
-      {/* Section 1 – Hero */}
-      <Hero
-        title="Authentic Neapolitan Sourdough Pizza Bases For Professional Kitchens"
-        subtitle="Handmade in Naples. Preservative-free. Ambient shelf life up to 3 months. Designed for hospitality operators."
-        primaryCtaLabel="Book a Live Tasting Demo"
-        primaryCtaLink="/book-a-demo"
-      />
-      
-      {/* Section 2 – The Core Problem */}
-      <ProblemSection />
-      
+
+      {/* Rosemary Scroll Track - Spans Hero and ProblemSection */}
+      <div className="relative">
+        <div className="absolute inset-y-0 right-0 z-20 pointer-events-none w-1/3">
+          <div className="sticky top-[30%] flex justify-end">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fdb0adf70361449f3a875cbb850127c8a?format=webp&width=800&height=1200"
+              alt="Rosemary"
+              className="w-48 lg:w-96 h-auto rotate-[25deg] translate-x-12 drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] opacity-95"
+            />
+          </div>
+        </div>
+
+        {/* Section 1 – Hero */}
+        <Hero
+          title="Authentic Neapolitan Sourdough Pizza Bases For Professional Kitchens"
+          subtitle="Handmade in Naples. Preservative-free. Ambient shelf life up to 3 months. Designed for hospitality operators."
+          primaryCtaLabel="Book a Live Tasting Demo"
+          primaryCtaLink="/book-a-demo"
+        />
+
+        {/* Section 2 – The Core Problem */}
+        <ProblemSection />
+      </div>
+
       {/* Section 3 – The Product (Main Selling Block) */}
       <ValueProps
         heading="The Napoli Pizza Base"
