@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { Categories } from "@/components/sections/Categories";
 import { CTASection } from "@/components/sections/CTASection";
+import { Button } from "@/components/ui/Button";
 import { getMetadata } from "@/lib/seo";
 
 export const metadata = getMetadata({
@@ -73,5 +74,3 @@ export default function ServicesPage() {
     </main>
   );
 }
-
-import { Button } from "@/components/ui/Button";

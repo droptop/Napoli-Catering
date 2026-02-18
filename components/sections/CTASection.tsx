@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
 
@@ -39,6 +40,3 @@ export const CTASection: React.FC<CTASectionProps> = ({
     </section>
   );
 };
-
-// Add Link import
-import Link from 'next/link';

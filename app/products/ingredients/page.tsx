@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { CTASection } from "@/components/sections/CTASection";
+import { Button } from "@/components/ui/Button";
 import { getMetadata } from "@/lib/seo";
 
 export const metadata = getMetadata({

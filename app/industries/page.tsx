@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { UseCases } from "@/components/sections/UseCases";
 import { CTASection } from "@/components/sections/CTASection";
+import { Button } from "@/components/ui/Button";
 import { getMetadata } from "@/lib/seo";
 
 export const metadata = getMetadata({
@@ -78,5 +79,3 @@ export default function IndustriesOverviewPage() {
     </main>
   );
 }
-
-import { Button } from "@/components/ui/Button";
