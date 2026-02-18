@@ -56,7 +56,7 @@ export const DemoForm = () => {
           name="business-name"
           id="business-name"
           required
-          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors placeholder:text-zinc-600 font-light text-sm"
+          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:outline-none focus:border-[#c5a059] transition-colors placeholder:text-zinc-600 font-light text-sm"
           placeholder="E.g. Amsterdam Golf Club"
         />
       </div>
@@ -70,7 +70,7 @@ export const DemoForm = () => {
           name="location"
           id="location"
           required
-          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
+          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:outline-none focus:border-[#c5a059] transition-colors font-light text-sm"
         />
       </div>
 
@@ -81,7 +81,7 @@ export const DemoForm = () => {
         <select
           id="industry"
           name="industry"
-          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
+          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:outline-none focus:border-[#c5a059] transition-colors font-light text-sm"
         >
           <option className="bg-zinc-900">Golf Club</option>
           <option className="bg-zinc-900">Catering Company</option>
@@ -100,7 +100,7 @@ export const DemoForm = () => {
           id="email"
           autoComplete="email"
           required
-          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
+          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:outline-none focus:border-[#c5a059] transition-colors font-light text-sm"
         />
       </div>
 
@@ -113,7 +113,7 @@ export const DemoForm = () => {
           name="contact-name"
           id="contact-name"
           required
-          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
+          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:outline-none focus:border-[#c5a059] transition-colors font-light text-sm"
         />
       </div>
 

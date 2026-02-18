@@ -58,7 +58,7 @@ export const ContactForm = () => {
             id="first-name"
             autoComplete="given-name"
             required
-            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors placeholder:text-zinc-600 font-light text-sm"
+            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:outline-none focus:border-[#c5a059] transition-colors placeholder:text-zinc-600 font-light text-sm"
           />
         </div>
       </div>
@@ -73,7 +73,7 @@ export const ContactForm = () => {
             id="last-name"
             autoComplete="family-name"
             required
-            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
+            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:outline-none focus:border-[#c5a059] transition-colors font-light text-sm"
           />
         </div>
       </div>
@@ -88,7 +88,7 @@ export const ContactForm = () => {
             id="company"
             autoComplete="organization"
             required
-            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
+            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:outline-none focus:border-[#c5a059] transition-colors font-light text-sm"
           />
         </div>
       </div>
@@ -103,7 +103,7 @@ export const ContactForm = () => {
             id="email"
             autoComplete="email"
             required
-            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
+            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:outline-none focus:border-[#c5a059] transition-colors font-light text-sm"
           />
         </div>
       </div>
@@ -117,7 +117,7 @@ export const ContactForm = () => {
             id="message"
             rows={4}
             placeholder="E.g. I need a quote for 2 commercial ovens and weekly flour supply."
-            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors placeholder:text-zinc-600 font-light text-sm"
+            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:outline-none focus:border-[#c5a059] transition-colors placeholder:text-zinc-600 font-light text-sm"
             defaultValue={''}
           />
         </div>
