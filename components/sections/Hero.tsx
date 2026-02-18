@@ -36,7 +36,7 @@ export const Hero: React.FC<HeroProps> = ({
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-zinc-950 via-zinc-950/40 to-transparent" />
 
       {/* Pizza Image: Half-visible from the right */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-[66rem] h-[66rem] z-1 pointer-events-none hidden lg:block">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-[52.8rem] h-[52.8rem] z-1 pointer-events-none hidden lg:block">
         <Image
           src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fa2aa5fa664af411ab2253dbe5869151e?format=webp&width=1200&height=1200"
           alt="Our Pizza Base"
