@@ -21,9 +21,9 @@ export const ComparisonSection = () => {
         <h2 className="text-3xl font-serif font-light tracking-tight text-white sm:text-4xl text-center mb-16 uppercase tracking-widest">
           Not a Supermarket Base
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24">
+        <div className="flex flex-col md:flex-row md:items-stretch md:justify-center gap-12 lg:gap-24">
           {/* Napoli Base */}
-          <div className="bg-white/5 backdrop-blur-sm p-10 rounded-3xl border border-[#c5a059]/30 shadow-sm">
+          <div className="flex-1">
             <h3 className="text-2xl font-serif font-light text-[#c5a059] mb-8 uppercase tracking-widest">Napoli Base</h3>
             <ul className="space-y-4">
               {[
@@ -43,8 +43,15 @@ export const ComparisonSection = () => {
             </ul>
           </div>
 
+          {/* Italian Vertical Liner (Green/White/Red) */}
+          <div className="hidden md:flex shrink-0 self-center h-48 w-[6px]">
+            <div className="w-[2px] h-full bg-[#008C45]" />
+            <div className="w-[2px] h-full bg-[#F4F5F0]" />
+            <div className="w-[2px] h-full bg-[#CD212A]" />
+          </div>
+
           {/* Standard Base */}
-          <div className="bg-white/5 backdrop-blur-sm p-10 rounded-3xl border border-white/10">
+          <div className="flex-1">
             <h3 className="text-2xl font-serif font-light text-zinc-400 mb-8 uppercase tracking-widest">Standard Market Base</h3>
             <ul className="space-y-4">
               {[
