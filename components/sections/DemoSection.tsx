@@ -5,12 +5,12 @@ import { Button } from '../ui/Button';
 
 export const DemoSection = () => {
   return (
-    <section className="py-24 sm:py-48 bg-zinc-950 text-white relative overflow-hidden">
+    <section className="py-24 sm:py-32 bg-zinc-950 text-white relative overflow-hidden">
       <div className="absolute inset-x-0 top-0 h-1/2 z-0 bg-gradient-to-b from-zinc-950 via-zinc-950/40 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 h-1/2 z-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent" />
 
       <Container className="relative z-10">
-        <div className="relative z-20 max-w-4xl mx-auto text-center mb-[-120px] sm:mb-[-180px]">
+        <div className="relative z-20 max-w-4xl mx-auto text-center mb-16 sm:mb-20">
           <h2 className="text-4xl font-serif font-light tracking-tight sm:text-6xl mb-6">
             See It. Taste It. Decide.
           </h2>
