@@ -177,9 +177,9 @@ export default function Home() {
       <DemoSection />
       
       {/* Section 8 – Who It’s For */}
-      <section className="py-24 bg-zinc-50 border-y border-zinc-100">
+      <section className="py-24 bg-zinc-950 border-y border-white/5">
         <Container>
-          <h2 className="text-3xl font-serif font-light tracking-tight text-zinc-900 sm:text-4xl text-center mb-16 uppercase tracking-widest">
+          <h2 className="text-3xl font-serif font-light tracking-tight text-white sm:text-4xl text-center mb-16 uppercase tracking-widest">
             Designed for Operators
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -187,23 +187,29 @@ export default function Home() {
               {
                 title: "Sports Clubs",
                 description: "Optimise seasonal spikes and club catering with premium pizza offerings that don't stretch your team.",
-                href: "/industries"
+                href: "/industries",
+                icon: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F18969ee3770449bcbb0d955a4a2b5bdc?format=webp&width=800&height=1200"
               },
-              { 
-                title: "Catering Companies", 
+              {
+                title: "Catering Companies",
                 description: "Deliver consistent quality at scale for events, weddings and corporate catering.",
-                href: "/industries" 
+                href: "/industries",
+                icon: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F6d3d9c2cd4cb49ad98e34fc5ff9a474b?format=webp&width=800&height=1200"
               },
-              { 
-                title: "Bars & Hospitality", 
+              {
+                title: "Bars & Hospitality",
                 description: "Add a high-margin food offering to your venue with minimal kitchen infrastructure.",
-                href: "/industries" 
+                href: "/industries",
+                icon: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F0bcb4f97bcaf4d8cb8d248239d74092f?format=webp&width=800&height=1200"
               }
             ].map((industry, index) => (
-              <Link key={index} href={industry.href} className="group flex flex-col p-8 bg-white rounded-3xl border border-zinc-100 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-bold text-zinc-900 mb-4 group-hover:text-[#c5a059] transition-colors uppercase tracking-widest">{industry.title}</h3>
-                <p className="text-zinc-600 font-light leading-relaxed">{industry.description}</p>
-                <span className="mt-8 text-xs font-bold uppercase tracking-widest text-[#c5a059] group-hover:translate-x-1 transition-transform inline-flex items-center gap-2">
+              <Link key={index} href={industry.href} className="group flex flex-col p-8 bg-white/5 rounded-3xl border border-white/10 shadow-sm hover:bg-white/10 transition-all">
+                <div className="mb-8 flex justify-center">
+                  <img src={industry.icon} className="h-32 w-auto grayscale brightness-125 transition-all group-hover:grayscale-0 group-hover:scale-110" alt={industry.title} />
+                </div>
+                <h3 className="text-xl font-bold text-[#c5a059] mb-4 uppercase tracking-widest text-center">{industry.title}</h3>
+                <p className="text-zinc-400 font-light leading-relaxed text-center text-sm">{industry.description}</p>
+                <span className="mt-8 text-xs font-bold uppercase tracking-widest text-[#c5a059] group-hover:translate-x-1 transition-transform inline-flex items-center gap-2 justify-center">
                   Learn more &rarr;
                 </span>
               </Link>
