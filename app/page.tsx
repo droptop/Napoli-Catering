@@ -59,9 +59,12 @@ export default function Home() {
             title: "Authentic Sourdough",
             description: "24-hour fermentation using traditional Neapolitan methods.",
             icon: (
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M12 8a4 4 0 100 8 4 4 0 000-8z" />
-              </svg>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F4787c7b0109d4358ad91fbe68bd58fd0?format=webp&width=800&height=1200"
+                alt="Authentic Sourdough"
+                className="h-8 w-auto brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity"
+                style={{ filter: 'sepia(100%) saturate(300%) brightness(70%) hue-rotate(5deg)' }}
+              />
             )
           },
           {
