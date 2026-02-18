@@ -96,9 +96,16 @@ export default function PizzaBasesPage() {
                   content: "Our bases are engineered to withstand the intense heat of professional pizza ovens (up to 450°C) without burning or losing structural integrity, while still performing exceptionally in standard 240°C convection ovens."
                 }
               ].map((item, index) => (
-                <div key={index}>
-                  <h3 className="text-xl font-bold text-[#c5a059] mb-3 uppercase tracking-widest">{item.title}</h3>
-                  <p className="text-white font-light leading-relaxed">{item.content}</p>
+                <div key={index} className="flex gap-6 items-stretch">
+                  <div className="flex shrink-0">
+                    <div className="w-[2px] bg-[#008C45]" />
+                    <div className="w-[2px] bg-[#F4F5F0]" />
+                    <div className="w-[2px] bg-[#CD212A]" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-[#c5a059] mb-3 uppercase tracking-widest">{item.title}</h3>
+                    <p className="text-white font-light leading-relaxed">{item.content}</p>
+                  </div>
                 </div>
               ))}
             </div>
@@ -172,6 +179,7 @@ export default function PizzaBasesPage() {
         subtitle="Book a live tasting demo to see how our sourdough bases perform in your kitchen."
         ctaLabel="Book a Live Demo"
         ctaLink="/book-a-demo"
+        showSketchBackground
       />
     </main>
   );
