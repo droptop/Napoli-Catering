@@ -25,9 +25,6 @@ export const HeritageSection = () => {
             <p className="text-xl text-zinc-800 font-medium tracking-tight">
               Our bases are produced within that tradition.
             </p>
-            <p className="mt-12 text-3xl font-serif font-light text-[#c5a059] italic pr-8 pl-8">
-              Authenticity is origin, not marketing.
-            </p>
           </div>
         </div>
       </Container>
