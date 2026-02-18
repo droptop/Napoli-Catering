@@ -68,7 +68,8 @@ export default function PizzaBasesPage() {
           style={{
             backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F911c671c9bd5429ca0699a0004064868?format=webp&width=1600&height=1200')`,
             backgroundRepeat: 'repeat',
-            backgroundSize: '800px'
+            backgroundSize: '800px',
+            filter: 'invert(1)'
           }}
         />
         <Container className="relative z-10">

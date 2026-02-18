@@ -41,7 +41,8 @@ export default function IndustriesPage() {
             backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F911c671c9bd5429ca0699a0004064868?format=webp&width=1600&height=1200')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
+            backgroundRepeat: 'no-repeat',
+            filter: 'invert(1)'
           }}
         />
         {/* Dark Vignette Overlay */}
@@ -86,7 +87,8 @@ export default function IndustriesPage() {
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
-                    opacity: 0.5
+                    opacity: 0.5,
+                    filter: 'invert(1)'
                   }}
                 >
                   {!item.icon && <div className="absolute inset-0 bg-black/40 z-0" />}
