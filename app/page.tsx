@@ -1,3 +1,4 @@
+import React from "react";
 import { Hero } from "@/components/sections/Hero";
 import { Partners } from "@/components/sections/Partners";
 import { ValueProps } from "@/components/sections/ValueProps";
@@ -200,7 +201,7 @@ export default function Home() {
           <h2 className="text-3xl font-serif font-light tracking-tight text-white sm:text-4xl text-center mb-16 uppercase tracking-widest">
             Designed for Operators
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="flex flex-col md:flex-row md:items-stretch md:justify-between gap-8 md:gap-0">
             {[
               {
                 title: "Sports Clubs",
@@ -221,16 +222,26 @@ export default function Home() {
                 icon: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F0bcb4f97bcaf4d8cb8d248239d74092f?format=webp&width=800&height=1200"
               }
             ].map((industry, index) => (
-              <Link key={index} href={industry.href} className="group flex flex-col p-8 bg-white/5 rounded-3xl border border-white/10 shadow-sm hover:bg-white/10 transition-all">
-                <div className="mb-8 flex justify-center">
-                  <img src={industry.icon} className="h-32 w-auto grayscale brightness-125 transition-all group-hover:grayscale-0 group-hover:scale-110" alt={industry.title} />
-                </div>
-                <h3 className="text-xl font-bold text-[#c5a059] mb-4 uppercase tracking-widest text-center">{industry.title}</h3>
-                <p className="text-zinc-400 font-light leading-relaxed text-center text-sm">{industry.description}</p>
-                <span className="mt-8 text-xs font-bold uppercase tracking-widest text-[#c5a059] group-hover:translate-x-1 transition-transform inline-flex items-center gap-2 justify-center">
-                  Learn more &rarr;
-                </span>
-              </Link>
+              <React.Fragment key={index}>
+                <Link href={industry.href} className="group flex-1 flex flex-col p-8 transition-all">
+                  <div className="mb-8 flex justify-center">
+                    <img src={industry.icon} className="h-32 w-auto grayscale brightness-125 transition-all group-hover:grayscale-0 group-hover:scale-110" alt={industry.title} />
+                  </div>
+                  <h3 className="text-xl font-bold text-[#c5a059] mb-4 uppercase tracking-widest text-center">{industry.title}</h3>
+                  <p className="text-zinc-400 font-light leading-relaxed text-center text-sm">{industry.description}</p>
+                  <span className="mt-8 text-xs font-bold uppercase tracking-widest text-[#c5a059] group-hover:translate-x-1 transition-transform inline-flex items-center gap-2 justify-center">
+                    Learn more &rarr;
+                  </span>
+                </Link>
+                {/* Italian Vertical Liner (Green/White/Red) */}
+                {(index === 0 || index === 1) && (
+                  <div className="hidden md:flex shrink-0 self-center h-48 w-[6px] mx-4">
+                    <div className="w-[2px] h-full bg-[#008C45]" />
+                    <div className="w-[2px] h-full bg-[#F4F5F0]" />
+                    <div className="w-[2px] h-full bg-[#CD212A]" />
+                  </div>
+                )}
+              </React.Fragment>
             ))}
           </div>
         </Container>
