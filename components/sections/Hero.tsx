@@ -22,13 +22,14 @@ export const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <section className="relative overflow-hidden pt-32 pb-48 lg:pt-48 lg:pb-64 bg-zinc-950">
-      {/* Premium Background: Repeatable Wood Texture */}
+      {/* Premium Background: Wood Texture */}
       <div
         className="absolute inset-0 z-0 opacity-60 grayscale"
         style={{
-          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fa6dc89c6e32041c6a517dcb956241527?format=webp&width=800&height=1200')`,
-          backgroundRepeat: 'repeat',
-          backgroundSize: '400px'
+          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fa6dc89c6e32041c6a517dcb956241527?format=webp&width=1600&height=1200')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
         }}
       />
       {/* Dark Vignette Overlay */}
