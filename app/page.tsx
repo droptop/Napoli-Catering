@@ -87,6 +87,7 @@ export default function Home() {
       {/* Section 6 – Commercial Advantage */}
       <ValueProps
         heading="Built for Hospitality Margins"
+        showSketchBackground
         items={[
           {
             title: "Lower Labour",

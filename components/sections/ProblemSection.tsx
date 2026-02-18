@@ -5,9 +5,9 @@ export const ProblemSection = () => {
   return (
     <section className="py-24 bg-white border-y border-zinc-100 relative overflow-hidden">
       <div
-        className="absolute inset-0 z-0 opacity-[0.08] pointer-events-none"
+        className="absolute inset-0 z-0 opacity-[0.15] pointer-events-none"
         style={{
-          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F9c074655065344e5a136f1220875d809?format=webp&width=1600&height=1200')`,
+          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F911c671c9bd5429ca0699a0004064868?format=webp&width=1600&height=1200')`,
           backgroundRepeat: 'repeat',
           backgroundSize: '800px'
         }}
