@@ -140,7 +140,7 @@ export default function Home() {
               }
             ].map((industry, index) => (
               <Link key={index} href={industry.href} className="group flex flex-col p-8 bg-white rounded-3xl border border-zinc-100 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="text-xl font-bold text-zinc-900 mb-4 group-hover:text-red-700 transition-colors uppercase tracking-widest">{industry.title}</h3>
+                <h3 className="text-xl font-bold text-zinc-900 mb-4 group-hover:text-[#c5a059] transition-colors uppercase tracking-widest">{industry.title}</h3>
                 <p className="text-zinc-600 font-light leading-relaxed">{industry.description}</p>
                 <span className="mt-8 text-xs font-bold uppercase tracking-widest text-[#c5a059] group-hover:translate-x-1 transition-transform inline-flex items-center gap-2">
                   Learn more &rarr;
