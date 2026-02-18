@@ -36,7 +36,7 @@ export const DemoForm = () => {
         </p>
         <Button
           variant="outline"
-          className="mt-8 border-white/10 text-white hover:bg-white/5"
+          className="mt-8 border-white/10 text-white hover:bg-white/5 rounded-none uppercase tracking-widest text-xs font-bold"
           onClick={() => setStatus('idle')}
         >
           Request another demo
@@ -122,7 +122,7 @@ export const DemoForm = () => {
           type="submit"
           disabled={status === 'loading'}
           variant="premium"
-          className="w-full py-4 text-lg"
+          className="w-full py-4 text-lg rounded-none uppercase tracking-widest font-bold"
         >
           {status === 'loading' ? 'Processing...' : 'Book a Tasting Demo'}
         </Button>
