@@ -73,8 +73,8 @@ export const DemoSection = () => {
                 )
               }
             ].map((item, index) => (
-              <div key={index} className="bg-zinc-900/90 backdrop-blur-md p-8 border border-white/10 shadow-2xl transition-all duration-300 hover:bg-zinc-800/90 hover:border-white/20 group">
-                <div className="h-12 w-12 bg-[#c5a059]/10 flex items-center justify-center text-[#c5a059] mb-6 group-hover:scale-110 transition-transform">
+              <div key={index} className="flex flex-col items-center text-center transition-all duration-300 group">
+                <div className="h-12 w-12 rounded-full border border-[#c5a059] bg-[#c5a059]/10 flex items-center justify-center text-[#c5a059] mb-6 group-hover:scale-110 transition-transform">
                   {item.icon}
                 </div>
                 <h3 className="text-lg font-bold text-[#c5a059] mb-4 uppercase tracking-widest">{item.title}</h3>

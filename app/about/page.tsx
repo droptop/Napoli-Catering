@@ -146,8 +146,8 @@ export default function AboutPage() {
                     )
                   }
                 ].map((item, index) => (
-                  <div key={index} className="flex items-start gap-6 bg-white/5 p-8 border border-white/10 transition-all duration-300 hover:bg-white/10 group">
-                    <div className="h-14 w-14 border-2 border-[#c5a059] flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 transition-transform bg-[#c5a059]/5">
+                  <div key={index} className="flex items-start gap-6 transition-all duration-300 group">
+                    <div className="h-14 w-14 rounded-full border-2 border-[#c5a059] flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 transition-transform bg-[#c5a059]/5">
                       {item.icon}
                     </div>
                     <div>
@@ -208,7 +208,7 @@ export default function AboutPage() {
                   }
                 ].map((point, index) => (
                   <div key={index} className="flex flex-col items-center text-center gap-4">
-                    <div className="h-10 w-10 bg-[#c5a059]/10 flex items-center justify-center shrink-0 text-[#c5a059]">
+                    <div className="h-12 w-12 rounded-full border border-[#c5a059] bg-[#c5a059]/10 flex items-center justify-center shrink-0 text-[#c5a059]">
                       {point.icon}
                     </div>
                     <div>
