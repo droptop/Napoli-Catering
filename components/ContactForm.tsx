@@ -129,7 +129,7 @@ export const ContactForm = () => {
           variant="premium"
           className="w-full py-4 text-lg uppercase tracking-widest font-bold"
         >
-          {status === 'loading' ? 'Sending...' : 'Request a Quote'}
+          {status === 'loading' ? 'Sending...' : 'Send Enquiry'}
         </Button>
       </div>
     </form>
