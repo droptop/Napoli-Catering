@@ -24,7 +24,7 @@ export const ContactForm = () => {
 
   if (status === 'success') {
     return (
-      <div className="rounded-3xl bg-white/5 backdrop-blur-md p-10 text-center border border-[#c5a059]/30 shadow-sm">
+      <div className="bg-white/5 backdrop-blur-md p-10 text-center border border-[#c5a059]/30 shadow-sm">
         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#c5a059]/10 text-[#c5a059] mb-6">
           <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -116,7 +116,7 @@ export const ContactForm = () => {
             name="message"
             id="message"
             rows={4}
-            placeholder="E.g. I need a quote for 2 commercial ovens and weekly flour supply."
+            placeholder="E.g. I need a quote for weekly Pizza Bases and other ingredients."
             className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:outline-none focus:border-[#c5a059] transition-colors placeholder:text-zinc-600 font-light text-sm"
             defaultValue={''}
           />

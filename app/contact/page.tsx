@@ -71,7 +71,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-md p-8 sm:p-12 rounded-3xl shadow-2xl border border-white/10">
+          <div className="bg-white/5 backdrop-blur-md p-8 sm:p-12 shadow-2xl border border-white/10">
             <h2 className="text-2xl font-serif font-light mb-8 text-[#c5a059] uppercase tracking-widest border-b border-white/5 pb-4">Enquiry Form</h2>
             <ContactForm />
           </div>
