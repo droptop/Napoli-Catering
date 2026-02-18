@@ -36,6 +36,24 @@ export default function ContactPage() {
 
             <div className="space-y-8">
               <div>
+                <h3 className="text-sm font-bold uppercase tracking-widest text-[#c5a059] mb-2 border-b border-white/5 pb-2">Contact Details</h3>
+                <ul className="text-white font-medium space-y-2">
+                  <li className="flex items-center gap-3">
+                    <span className="text-[#c5a059] text-xs uppercase tracking-widest font-bold">Phone:</span>
+                    <span>0657.60.3128</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-[#c5a059] text-xs uppercase tracking-widest font-bold">Email:</span>
+                    <span>sales@napolicateringco.nl</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-[#c5a059] text-xs uppercase tracking-widest font-bold">Website:</span>
+                    <span>napolicateringco.nl</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
                 <h3 className="text-sm font-bold uppercase tracking-widest text-[#c5a059] mb-2 border-b border-white/5 pb-2">Operational Coverage</h3>
                 <p className="text-white font-medium">Nationwide ambient delivery and support across the Netherlands.</p>
               </div>

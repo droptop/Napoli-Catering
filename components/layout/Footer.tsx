@@ -29,6 +29,9 @@ export const Footer = () => {
             <Link href="/" className="font-serif text-xl tracking-tight text-white uppercase font-light">
               NAPOLI <span className="text-[#c5a059]">CATERING CO.</span>
             </Link>
+            <p className="mt-4 text-sm text-zinc-500 leading-6 max-w-xs font-light italic">
+              "Your one stop solution for Authentic Neapolitan Pizza"
+            </p>
             <p className="mt-4 text-sm text-zinc-500 leading-6 max-w-xs font-light">
               Authentic Neapolitan Sourdough Pizza Bases handmade in Naples. Designed for professional kitchens and hospitality operators across the Netherlands.
             </p>
@@ -70,6 +73,15 @@ export const Footer = () => {
                   </Link>
                 </li>
               ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Contact</h3>
+            <ul className="mt-4 space-y-2 text-sm text-zinc-500 font-light">
+              <li>Phone: 0657.60.3128</li>
+              <li>Email: sales@napolicateringco.nl</li>
+              <li>Website: napolicateringco.nl</li>
             </ul>
           </div>
         </div>
