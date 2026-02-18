@@ -10,9 +10,9 @@ const navigation = {
     { name: 'Packaging', href: '/products/packaging' },
   ],
   services: [
-    { name: 'Commercial Catering Supply', href: '/services/catering-supply' },
-    { name: 'Advice & Setup Support', href: '/services/advice' },
-    { name: 'Bulk / Recurring Orders', href: '/services/bulk-orders' },
+    { name: 'Catering Supply', href: '/services/supply' },
+    { name: 'Advice & Support', href: '/services/advice' },
+    { name: 'Bulk Orders', href: '/services/bulk-orders' },
   ],
   industries: [
     { name: 'Pizzerias', href: '/industries/pizzerias' },
