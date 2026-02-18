@@ -12,7 +12,7 @@ export const DemoSection = () => {
       <Container className="relative z-10">
         <div className="relative z-20 max-w-4xl mx-auto text-center mb-16 sm:mb-20">
           <h2 className="text-4xl font-serif font-light tracking-tight sm:text-6xl mb-6">
-            See It. Taste It. Decide.
+            See It<span className="text-[#008C45]">.</span> Taste It<span className="text-[#F4F5F0]">.</span> Decide<span className="text-[#CD212A]">.</span>
           </h2>
           <p className="text-xl sm:text-2xl text-zinc-300 font-light leading-relaxed">
             We bring the oven. We prepare the pizza. <br className="hidden sm:block" />
