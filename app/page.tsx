@@ -1,13 +1,17 @@
 import { Hero } from "@/components/sections/Hero";
 import { Partners } from "@/components/sections/Partners";
-import { Categories } from "@/components/sections/Categories";
 import { ValueProps } from "@/components/sections/ValueProps";
+import { ProblemSection } from "@/components/sections/ProblemSection";
+import { ComparisonSection } from "@/components/sections/ComparisonSection";
 import { StepProcess } from "@/components/sections/StepProcess";
-import { UseCases } from "@/components/sections/UseCases";
+import { DemoSection } from "@/components/sections/DemoSection";
+import { HeritageSection } from "@/components/sections/HeritageSection";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTASection } from "@/components/sections/CTASection";
 import { OrganizationJsonLd, LocalBusinessJsonLd } from "@/components/JsonLd";
+import { Container } from "@/components/ui/Container";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,157 +19,149 @@ export default function Home() {
       <OrganizationJsonLd />
       <LocalBusinessJsonLd />
       
+      {/* Section 1 – Hero */}
       <Hero
-        title="Professional Neapolitan Catering Supply."
-        subtitle="The reliable B2B partner for premium pizza ovens, artisanal ingredients, and commercial catering equipment in the Netherlands."
-        primaryCtaLabel="Request a Quote"
-        primaryCtaLink="/contact"
-        secondaryCtaLabel="View Products"
-        secondaryCtaLink="/products"
+        title="Authentic Neapolitan Sourdough Pizza Bases For Professional Kitchens"
+        subtitle="Handmade in Naples. Preservative-free. Ambient shelf life up to 3 months. Designed for hospitality operators."
+        primaryCtaLabel="Book a Live Tasting Demo"
+        primaryCtaLink="/book-a-demo"
+        secondaryCtaLabel="Download Product Overview"
+        secondaryCtaLink="/pizza-bases"
       />
       
-      <Partners heading="Trusted by leading restaurants and pizzerias across the NL" />
+      {/* Section 2 – The Core Problem */}
+      <ProblemSection />
       
-      <Categories
-        heading="Commercial Product Range"
-        categories={[
-          {
-            title: "Professional Ovens",
-            description: "Stationary and mobile wood and gas ovens for commercial bakes.",
-            href: "/products/ovens",
-          },
-          {
-            title: "Ingredients & Flour",
-            description: "Authentic Italian flour and DOP ingredients for professional kitchens.",
-            href: "/products/ingredients",
-          },
-          {
-            title: "Tools & Accessories",
-            description: "Commercial-grade peels, prep tools, and kitchen essentials.",
-            href: "/products/tools",
-          },
-          {
-            title: "Bulk Packaging",
-            description: "Professional pizza boxes and service items for high-volume operations.",
-            href: "/products/packaging",
-          },
-        ]}
-      />
-      
+      {/* Section 3 – The Product (Main Selling Block) */}
       <ValueProps
-        heading="The Napoli Catering Advantage"
+        heading="The Napoli Pizza Base"
         items={[
           {
-            title: "Authentic Sourcing",
-            description: "Direct relationships with Italian producers ensuring artisanal quality.",
+            title: "Authentic Sourdough",
+            description: "24-hour fermentation using traditional Neapolitan methods.",
           },
           {
-            title: "B2B Reliability",
-            description: "Consistent supply chains and commercial invoicing for Dutch businesses.",
+            title: "No Preservatives",
+            description: "Fresh product protected by packaging technology, not additives.",
           },
           {
-            title: "Fast NL Delivery",
-            description: "Efficient logistics network providing rapid delivery across the Netherlands.",
+            title: "3-Month Ambient Shelf Life",
+            description: "No freezer infrastructure required.",
           },
           {
-            title: "Expert Support",
-            description: "Professional consultation on equipment setup and kitchen workflow.",
-          },
-          {
-            title: "Wholesale Pricing",
-            description: "Competitive B2B rates and volume-based discounts for bulk orders.",
+            title: "Designed for Professional Kitchens",
+            description: "Works in conventional ovens (240°C+) and high-heat pizza ovens.",
           },
         ]}
       />
       
+      {/* Section 4 – Why It’s Different */}
+      <ComparisonSection />
+      
+      {/* Section 5 – How It Works */}
       <StepProcess
-        heading="Our Process"
+        heading="From Delivery to Service in Minutes"
         steps={[
           {
-            title: "Consultation",
-            description: "Discuss your equipment needs or supply volume with our commercial team.",
+            title: "Ambient Delivery",
+            description: "Delivered ambient to your venue, ready for use.",
           },
           {
-            title: "Procurement",
-            description: "We handle the sourcing and quality control of your selected products.",
+            title: "Ambient Storage",
+            description: "Store at room temperature. No freezer space required.",
           },
           {
-            title: "Fulfilment",
-            description: "Scheduled delivery and setup support for your commercial kitchen.",
+            title: "Add Toppings",
+            description: "Customise with your own ingredients and sauces.",
+          },
+          {
+            title: "Professional Bake",
+            description: "Bake at 240–360°C for authentic results.",
+          },
+          {
+            title: "Authentic Service",
+            description: "Serve authentic Neapolitan pizza to your guests.",
           },
         ]}
       />
       
-      <UseCases
-        heading="Sector Solutions"
-        useCases={[
-          {
-            title: "Artisanal Pizzerias",
-            description: "Complete setup from professional wood-fired ovens to recurring flour supply.",
-            href: "/industries/pizzerias",
-          },
-          {
-            title: "Full-Service Restaurants",
-            description: "Specialized equipment and premium ingredients for high-volume service.",
-            href: "/industries/restaurants",
-          },
-          {
-            title: "Mobile Food Trucks",
-            description: "Lightweight, high-performance ovens designed for mobility and events.",
-            href: "/industries/food-trucks",
-          },
-        ]}
-      />
-      
-      <Testimonials
-        heading="Client Feedback"
-        testimonials={[
-          {
-            quote: "The oven delivery and setup were handled with extreme professionalism. The consistency of their flour supply has been a game-changer for our daily service.",
-            author: "M. de Vries",
-            role: "Owner",
-            company: "Amsterdam Pizza Co.",
-          },
-          {
-            quote: "Napoli Catering Co. is our one-stop shop for all Neapolitan supplies. Their B2B invoicing and reliable delivery in the NL make them an essential partner.",
-            author: "J. Bakker",
-            role: "Head Chef",
-            company: "Trattoria Utrecht",
-          },
-        ]}
-      />
-      
-      <FAQ
-        heading="Frequently Asked Questions"
+      {/* Section 6 – Commercial Advantage */}
+      <ValueProps
+        heading="Built for Hospitality Margins"
         items={[
           {
-            question: "Do you deliver throughout the Netherlands?",
-            answer: "Yes, we offer nationwide delivery across the Netherlands. Bulk pallet orders are managed through our dedicated commercial logistics network.",
+            title: "Lower Labour",
+            description: "No dough preparation or specialized skill required.",
           },
           {
-            question: "Is business invoicing available?",
-            answer: "Absolutely. All our sales are B2B, and we provide detailed VAT invoices for all equipment and recurring supply orders.",
+            title: "Storage Savings",
+            description: "No freezer storage costs. Standard ambient shelving.",
           },
           {
-            question: "Do you offer bulk order discounts?",
-            answer: "Yes, we provide competitive wholesale pricing and volume-based discounts for recurring ingredient and packaging orders.",
+            title: "Premium Pricing",
+            description: "Command premium menu pricing with authentic quality.",
           },
           {
-            question: "Can you assist with kitchen setup?",
-            answer: "We offer professional consultation on oven selection and kitchen workflow to ensure your equipment is optimized for commercial use.",
+            title: "Consistency",
+            description: "Consistent quality and structure every single service.",
           },
           {
-            question: "What are the lead times for custom equipment?",
-            answer: "Standard in-stock items are delivered within 2-3 business days. Custom oven builds typically have a lead time of 4-6 weeks.",
+            title: "Minimal Training",
+            description: "Simple operational integration for existing staff.",
           },
         ]}
       />
       
+      {/* Section 7 – Live Demonstration */}
+      <DemoSection />
+      
+      {/* Section 8 – Who It’s For */}
+      <section className="py-24 bg-zinc-50 border-y border-zinc-100">
+        <Container>
+          <h2 className="text-3xl font-serif font-light tracking-tight text-zinc-900 sm:text-4xl text-center mb-16 uppercase tracking-widest">
+            Designed for Operators
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {[
+              { 
+                title: "Golf Clubs", 
+                description: "Optimise seasonal spikes and club catering with premium pizza offerings that don't stretch your team.",
+                href: "/industries" 
+              },
+              { 
+                title: "Catering Companies", 
+                description: "Deliver consistent quality at scale for events, weddings and corporate catering.",
+                href: "/industries" 
+              },
+              { 
+                title: "Bars & Hospitality", 
+                description: "Add a high-margin food offering to your venue with minimal kitchen infrastructure.",
+                href: "/industries" 
+              }
+            ].map((industry, index) => (
+              <Link key={index} href={industry.href} className="group flex flex-col p-8 bg-white rounded-3xl border border-zinc-100 shadow-sm hover:shadow-md transition-shadow">
+                <h3 className="text-xl font-bold text-zinc-900 mb-4 group-hover:text-red-700 transition-colors uppercase tracking-widest">{industry.title}</h3>
+                <p className="text-zinc-600 font-light leading-relaxed">{industry.description}</p>
+                <span className="mt-8 text-xs font-bold uppercase tracking-widest text-[#c5a059] group-hover:translate-x-1 transition-transform inline-flex items-center gap-2">
+                  Learn more &rarr;
+                </span>
+              </Link>
+            ))}
+          </div>
+        </Container>
+      </section>
+      
+      {/* Section 9 – Neapolitan Roots */}
+      <HeritageSection />
+      
+      <Partners heading="Trusted by leading hospitality brands across the NL" />
+      
+      {/* Section 10 – Final CTA */}
       <CTASection
-        title="Ready to optimize your catering operations?"
-        subtitle="Contact our commercial team today for a tailored quote or a consultation on your supply needs."
-        ctaLabel="Request a Custom Quote"
-        ctaLink="/contact"
+        title="Ready to Elevate Your Pizza Offering?"
+        subtitle="Contact our commercial team today for a live demo or request detailed product information."
+        ctaLabel="Book a Tasting Demo"
+        ctaLink="/book-a-demo"
       />
     </main>
   );

@@ -7,11 +7,11 @@ import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
 
 const navigation = [
-  { name: 'Products', href: '/products' },
-  { name: 'Services', href: '/services' },
+  { name: 'Pizza Bases', href: '/pizza-bases' },
   { name: 'Industries', href: '/industries' },
+  { name: 'Book a Demo', href: '/book-a-demo' },
   { name: 'About', href: '/about' },
-  { name: 'FAQ', href: '/faq' },
+  { name: 'Contact', href: '/contact' },
 ];
 
 export const Navbar = () => {
@@ -69,8 +69,8 @@ export const Navbar = () => {
           </div>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Button href="/contact" size="sm" variant="premium">
-              Request a Quote
+            <Button href="/book-a-demo" size="sm" variant="premium">
+              Book a Demo
             </Button>
           </div>
         </nav>
@@ -90,8 +90,8 @@ export const Navbar = () => {
                 </Link>
               ))}
               <div className="px-3 py-4">
-                <Button href="/contact" className="w-full">
-                  Request a Quote
+                <Button href="/book-a-demo" className="w-full">
+                  Book a Demo
                 </Button>
               </div>
             </div>

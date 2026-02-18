@@ -5,12 +5,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   
   const routes = [
     '',
-    '/products',
-    '/products/ovens',
-    '/products/ingredients',
-    '/products/tools',
-    '/products/packaging',
-    '/services',
+    '/pizza-bases',
+    '/industries',
+    '/book-a-demo',
     '/about',
     '/contact',
     '/faq',

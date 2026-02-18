@@ -3,27 +3,17 @@ import Link from 'next/link';
 import { Container } from '../ui/Container';
 
 const navigation = {
-  products: [
-    { name: 'Ovens', href: '/products/ovens' },
-    { name: 'Ingredients & Flour', href: '/products/ingredients' },
-    { name: 'Tools & Accessories', href: '/products/tools' },
-    { name: 'Packaging', href: '/products/packaging' },
-  ],
-  services: [
-    { name: 'Catering Supply', href: '/services/supply' },
-    { name: 'Advice & Support', href: '/services/advice' },
-    { name: 'Bulk Orders', href: '/services/bulk-orders' },
-  ],
-  industries: [
-    { name: 'Pizzerias', href: '/industries/pizzerias' },
-    { name: 'Restaurants', href: '/industries/restaurants' },
-    { name: 'Food Trucks', href: '/industries/food-trucks' },
-    { name: 'Caterers', href: '/industries/caterers' },
+  solutions: [
+    { name: 'Pizza Bases', href: '/pizza-bases' },
+    { name: 'Industries', href: '/industries' },
+    { name: 'Book a Demo', href: '/book-a-demo' },
   ],
   company: [
     { name: 'About', href: '/about' },
     { name: 'Contact', href: '/contact' },
     { name: 'FAQ', href: '/faq' },
+  ],
+  legal: [
     { name: 'Privacy', href: '/privacy' },
     { name: 'Terms', href: '/terms' },
   ],
@@ -40,27 +30,14 @@ export const Footer = () => {
               NAPOLI <span className="text-[#c5a059]">CATERING CO.</span>
             </Link>
             <p className="mt-4 text-sm text-zinc-500 leading-6 max-w-xs font-light">
-              Professional Neapolitan catering equipment and premium ingredients for the Dutch market. One stop shop for commercial pizza ovens and bulk supply.
+              Authentic Neapolitan Sourdough Pizza Bases handmade in Naples. Designed for professional kitchens and hospitality operators across the Netherlands.
             </p>
-          </div>
-          
-          <div>
-            <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Products</h3>
-            <ul className="mt-4 space-y-2">
-              {navigation.products.map((item) => (
-                <li key={item.name}>
-                  <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
 
           <div>
-            <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Services</h3>
+            <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Solutions</h3>
             <ul className="mt-4 space-y-2">
-              {navigation.services.map((item) => (
+              {navigation.solutions.map((item) => (
                 <li key={item.name}>
                   <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
                     {item.name}
@@ -74,6 +51,19 @@ export const Footer = () => {
             <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Company</h3>
             <ul className="mt-4 space-y-2">
               {navigation.company.map((item) => (
+                <li key={item.name}>
+                  <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Legal</h3>
+            <ul className="mt-4 space-y-2">
+              {navigation.legal.map((item) => (
                 <li key={item.name}>
                   <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
                     {item.name}

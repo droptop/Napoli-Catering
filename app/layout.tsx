@@ -21,8 +21,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = getMetadata({
-  title: "Napoli Catering Co. | Neapolitan Baked Goods & Pizza Equipment NL",
-  description: "One-stop shop for commercial Neapolitan catering in the Netherlands. High-quality pizza ovens, ingredients, tools, and catering supply for professionals.",
+  title: "Napoli Catering Co. | Authentic Neapolitan Sourdough Pizza Bases",
+  description: "Handmade in Naples. Preservative-free. Ambient sourdough pizza bases designed for professional kitchens and hospitality operators in the Netherlands.",
 });
 
 export default function RootLayout({
@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased bg-white text-zinc-900`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased bg-background text-zinc-900`}
       >
         <Navbar />
         <div className="pt-20">
