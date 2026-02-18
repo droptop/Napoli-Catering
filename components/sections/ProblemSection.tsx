@@ -19,7 +19,7 @@ export const ProblemSection = () => {
           </h2>
           <ul className="space-y-6">
             {[
-              "Dough preparation requires skill",
+              "Dough preparation requires skill, and time",
               "Staff are already stretched",
               "Frozen bases compromise quality",
               "Authentic Neapolitan flavour is hard to replicate"
