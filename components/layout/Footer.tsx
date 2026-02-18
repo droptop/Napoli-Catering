@@ -37,52 +37,80 @@ export const Footer = () => {
             </p>
           </div>
 
-          <div>
-            <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Solutions</h3>
-            <ul className="mt-4 space-y-2">
-              {navigation.solutions.map((item) => (
-                <li key={item.name}>
-                  <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <div className="flex gap-4">
+            <div className="flex shrink-0 w-[3px] py-1">
+              <div className="w-[1px] h-full bg-[#008C45]" />
+              <div className="w-[1px] h-full bg-[#F4F5F0]" />
+              <div className="w-[1px] h-full bg-[#CD212A]" />
+            </div>
+            <div>
+              <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Solutions</h3>
+              <ul className="mt-4 space-y-2">
+                {navigation.solutions.map((item) => (
+                  <li key={item.name}>
+                    <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Company</h3>
-            <ul className="mt-4 space-y-2">
-              {navigation.company.map((item) => (
-                <li key={item.name}>
-                  <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <div className="flex gap-4">
+            <div className="flex shrink-0 w-[3px] py-1">
+              <div className="w-[1px] h-full bg-[#008C45]" />
+              <div className="w-[1px] h-full bg-[#F4F5F0]" />
+              <div className="w-[1px] h-full bg-[#CD212A]" />
+            </div>
+            <div>
+              <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Company</h3>
+              <ul className="mt-4 space-y-2">
+                {navigation.company.map((item) => (
+                  <li key={item.name}>
+                    <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Legal</h3>
-            <ul className="mt-4 space-y-2">
-              {navigation.legal.map((item) => (
-                <li key={item.name}>
-                  <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <div className="flex gap-4">
+            <div className="flex shrink-0 w-[3px] py-1">
+              <div className="w-[1px] h-full bg-[#008C45]" />
+              <div className="w-[1px] h-full bg-[#F4F5F0]" />
+              <div className="w-[1px] h-full bg-[#CD212A]" />
+            </div>
+            <div>
+              <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Legal</h3>
+              <ul className="mt-4 space-y-2">
+                {navigation.legal.map((item) => (
+                  <li key={item.name}>
+                    <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
-          <div>
-            <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Contact</h3>
-            <ul className="mt-4 space-y-2 text-sm text-zinc-500 font-light">
-              <li>Phone: 0657.60.3128</li>
-              <li>Email: sales@napolicateringco.nl</li>
-              <li>Website: napolicateringco.nl</li>
-            </ul>
+          <div className="flex gap-4">
+            <div className="flex shrink-0 w-[3px] py-1">
+              <div className="w-[1px] h-full bg-[#008C45]" />
+              <div className="w-[1px] h-full bg-[#F4F5F0]" />
+              <div className="w-[1px] h-full bg-[#CD212A]" />
+            </div>
+            <div>
+              <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Contact</h3>
+              <ul className="mt-4 space-y-2 text-sm text-zinc-500 font-light">
+                <li>Phone: 0657.60.3128</li>
+                <li>Email: sales@napolicateringco.nl</li>
+                <li>Website: napolicateringco.nl</li>
+              </ul>
+            </div>
           </div>
         </div>
         
