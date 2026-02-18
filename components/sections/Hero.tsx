@@ -53,21 +53,6 @@ export const Hero: React.FC<HeroProps> = ({
               </Button>
             )}
           </div>
-
-          <div className="mt-16 flex flex-wrap items-center gap-x-8 gap-y-4 text-sm font-semibold text-zinc-400 uppercase tracking-widest">
-            <span className="flex items-center gap-2">
-              <div className="h-1.5 w-1.5 rounded-full bg-[#c5a059]" />
-              Fast delivery in NL
-            </span>
-            <span className="flex items-center gap-2">
-              <div className="h-1.5 w-1.5 rounded-full bg-[#c5a059]" />
-              Business invoicing
-            </span>
-            <span className="flex items-center gap-2">
-              <div className="h-1.5 w-1.5 rounded-full bg-[#c5a059]" />
-              Bulk orders
-            </span>
-          </div>
         </div>
       </Container>
     </section>
