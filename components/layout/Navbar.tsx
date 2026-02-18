@@ -31,7 +31,7 @@ export const Navbar = () => {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+              className="-m-2.5 inline-flex items-center justify-center rounded-none p-2.5 text-white"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <span className="sr-only">Open main menu</span>
@@ -74,7 +74,7 @@ export const Navbar = () => {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white/90 hover:bg-white/10"
+                  className="block rounded-none px-3 py-2 text-base font-semibold leading-7 text-white/90 hover:bg-white/10"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
