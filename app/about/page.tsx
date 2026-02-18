@@ -27,13 +27,22 @@ export default function AboutPage() {
         <div className="absolute inset-0 z-0 bg-gradient-to-r from-zinc-950 via-zinc-950/40 to-transparent" />
 
         <Container className="relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl font-serif font-light tracking-tight text-white sm:text-6xl mb-8 uppercase tracking-widest leading-tight">
-              Rooted in Napoli, serving the Netherlands.
-            </h1>
-            <p className="text-xl text-zinc-300 leading-relaxed font-light">
-              Napoli Catering Co. was founded to bridge the gap between ancient Italian tradition and the modern Dutch hospitality industry. We specialize in one thing: providing the foundations for authentic Neapolitan pizza.
-            </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h1 className="text-4xl font-serif font-light tracking-tight text-white sm:text-6xl mb-8 uppercase tracking-widest leading-tight">
+                Rooted in Napoli, serving the Netherlands.
+              </h1>
+              <p className="text-xl text-zinc-300 leading-relaxed font-light">
+                Napoli Catering Co. was founded to bridge the gap between ancient Italian tradition and the modern Dutch hospitality industry. We specialize in one thing: providing the foundations for authentic Neapolitan pizza.
+              </p>
+            </div>
+            <div className="flex justify-center lg:justify-end">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F989e54cd20a049c1b8d9eb6dbd31e358?format=webp&width=800&height=1200"
+                alt="Napalese illustration"
+                className="h-64 sm:h-80 md:h-96 w-auto opacity-80 transition-opacity hover:opacity-100"
+              />
+            </div>
           </div>
         </Container>
       </section>
