@@ -75,10 +75,10 @@ export default function AboutPage() {
 
       <section className="py-24 bg-zinc-900 border-y border-white/5">
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div className="space-y-8">
-              <h2 className="text-3xl font-serif font-light text-white mb-12 uppercase tracking-widest">Main Offering</h2>
-              <div className="flex flex-col gap-6">
+          <div className="space-y-24">
+            <div className="space-y-12">
+              <h2 className="text-3xl font-serif font-light text-white mb-12 uppercase tracking-widest text-center">Main Offering</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[
                   {
                     title: "Dough Balls & Pizza Bases",
@@ -135,29 +135,32 @@ export default function AboutPage() {
                 ))}
               </div>
             </div>
-            <div>
-              <h2 className="text-3xl font-serif font-light text-white mb-8 uppercase tracking-widest">Complete Solutions</h2>
-              <p className="text-zinc-400 font-light mb-8 leading-relaxed italic">From dough to delivery, we've got you covered. Trusted by businesses, pizzerias, restaurants & catering companies.</p>
-              <ul className="space-y-6">
+
+            <div className="pt-24 border-t border-white/5">
+              <h2 className="text-3xl font-serif font-light text-white mb-8 uppercase tracking-widest text-center">Complete Solutions</h2>
+              <div className="max-w-4xl mx-auto text-center mb-16">
+                <p className="text-zinc-400 font-light text-xl leading-relaxed italic">From dough to delivery, we've got you covered. Trusted by businesses, pizzerias, restaurants & catering companies.</p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 {[
                   { title: "Expert Support", desc: "Helping you optimise your pizza-making process with technical guidance." },
                   { title: "Reliable Delivery", desc: "Fast & reliable logistics so your operations never miss a beat." },
                   { title: "Premium Ingredients", desc: "Access to the highest grade products sourced directly for professional use." },
                   { title: "State-of-the-Art Equipment", desc: "High-heat performance ovens and tools built for durability and precision." }
                 ].map((point, index) => (
-                  <li key={index} className="flex gap-4">
-                    <div className="h-6 w-6 rounded-full bg-[#c5a059]/10 flex items-center justify-center shrink-0">
-                      <svg className="h-3 w-3 text-[#c5a059]" fill="currentColor" viewBox="0 0 20 20">
+                  <div key={index} className="flex flex-col items-center text-center gap-4">
+                    <div className="h-10 w-10 rounded-full bg-[#c5a059]/10 flex items-center justify-center shrink-0">
+                      <svg className="h-5 w-5 text-[#c5a059]" fill="currentColor" viewBox="0 0 20 20">
                         <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                       </svg>
                     </div>
                     <div>
-                      <h4 className="font-bold text-white uppercase tracking-widest text-xs mb-1">{point.title}</h4>
-                      <p className="text-zinc-400 font-light text-sm">{point.desc}</p>
+                      <h4 className="font-bold text-white uppercase tracking-widest text-sm mb-2">{point.title}</h4>
+                      <p className="text-zinc-400 font-light text-sm leading-relaxed">{point.desc}</p>
                     </div>
-                  </li>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </div>
           </div>
         </Container>
