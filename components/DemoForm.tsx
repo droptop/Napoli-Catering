@@ -57,7 +57,7 @@ export const DemoForm = () => {
           id="business-name"
           required
           className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:outline-none focus:border-[#c5a059] transition-colors placeholder:text-zinc-600 font-light text-sm"
-          placeholder="E.g. Amsterdam Golf Club"
+          placeholder="E.g. Amsterdam Sports Club"
         />
       </div>
 
@@ -83,7 +83,7 @@ export const DemoForm = () => {
           name="industry"
           className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:outline-none focus:border-[#c5a059] transition-colors font-light text-sm"
         >
-          <option className="bg-zinc-900">Golf Club</option>
+          <option className="bg-zinc-900">Sports Club</option>
           <option className="bg-zinc-900">Catering Company</option>
           <option className="bg-zinc-900">Bar / Hospitality Venue</option>
           <option className="bg-zinc-900">Other</option>
