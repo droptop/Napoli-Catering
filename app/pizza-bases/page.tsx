@@ -150,6 +150,7 @@ export default function PizzaBasesPage() {
       {/* FAQ Section */}
       <FAQ
         heading="Technical FAQ"
+        showSketchBackground
         items={[
           {
             question: "Do the bases require freezing?",

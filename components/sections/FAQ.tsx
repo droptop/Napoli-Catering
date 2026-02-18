@@ -11,14 +11,25 @@ interface FAQItem {
 interface FAQProps {
   heading: string;
   items: FAQItem[];
+  showSketchBackground?: boolean;
 }
 
-export const FAQ: React.FC<FAQProps> = ({ heading, items }) => {
+export const FAQ: React.FC<FAQProps> = ({ heading, items, showSketchBackground = false }) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-24 bg-zinc-50">
-      <Container>
+    <section className={`py-24 relative overflow-hidden ${showSketchBackground ? 'bg-white' : 'bg-zinc-50'}`}>
+      {showSketchBackground && (
+        <div
+          className="absolute inset-0 z-0 opacity-[0.50] pointer-events-none"
+          style={{
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F911c671c9bd5429ca0699a0004064868?format=webp&width=1600&height=1200')`,
+            backgroundRepeat: 'repeat',
+            backgroundSize: '800px'
+          }}
+        />
+      )}
+      <Container className="relative z-10">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl text-center mb-16">
             {heading}
