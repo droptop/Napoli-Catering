@@ -152,9 +152,7 @@ export default function Home() {
       
       {/* Section 9 – Neapolitan Roots */}
       <HeritageSection />
-      
-      <Partners heading="Trusted by leading hospitality brands across the NL" />
-      
+
       {/* Section 10 – Final CTA */}
       <CTASection
         title="Ready to Elevate Your Pizza Offering?"
