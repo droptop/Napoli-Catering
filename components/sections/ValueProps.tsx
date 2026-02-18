@@ -18,7 +18,7 @@ export const ValueProps: React.FC<ValuePropsProps> = ({ heading, items, showSket
     <section className={`py-24 relative overflow-hidden ${showSketchBackground ? 'bg-white' : 'bg-zinc-50'}`}>
       {showSketchBackground && (
         <div
-          className="absolute inset-0 z-0 opacity-[0.15] pointer-events-none"
+          className="absolute inset-0 z-0 opacity-[0.25] pointer-events-none"
           style={{
             backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F911c671c9bd5429ca0699a0004064868?format=webp&width=1600&height=1200')`,
             backgroundRepeat: 'repeat',
