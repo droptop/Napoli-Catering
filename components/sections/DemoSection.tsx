@@ -53,7 +53,7 @@ export const DemoSection = () => {
                 description: "Technical setup and oven temperature optimization.",
                 icon: (
                   <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 21c-4.418 0-8-3.582-8-8 0-3.314 2.686-6 6-6V5a2 2 0 114 0v2c3.314 0 6 2.686 6 6 0 4.418-3.582 8-8 8zM9 21h6m-3-14V5" />
                   </svg>
                 )
               },
