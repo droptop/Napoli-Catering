@@ -24,19 +24,19 @@ export const ContactForm = () => {
 
   if (status === 'success') {
     return (
-      <div className="rounded-2xl bg-zinc-50 p-8 text-center border border-zinc-100">
-        <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100 text-green-600 mb-4">
-          <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <div className="rounded-3xl bg-white/5 backdrop-blur-md p-10 text-center border border-[#c5a059]/30 shadow-sm">
+        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#c5a059]/10 text-[#c5a059] mb-6">
+          <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="text-xl font-bold text-zinc-900">Request Received</h3>
-        <p className="mt-2 text-zinc-600">
+        <h3 className="text-2xl font-serif font-light text-white mb-4 uppercase tracking-widest">Request Received</h3>
+        <p className="text-zinc-400 font-light leading-relaxed">
           Thank you for your interest. A commercial specialist from Napoli Catering Co. will contact you within 24 hours.
         </p>
-        <Button 
-          variant="outline" 
-          className="mt-6" 
+        <Button
+          variant="outline"
+          className="mt-8 border-white/10 text-white hover:bg-white/5 uppercase tracking-widest text-xs font-bold"
           onClick={() => setStatus('idle')}
         >
           Send another message
@@ -48,85 +48,86 @@ export const ContactForm = () => {
   return (
     <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
       <div>
-        <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-zinc-900">
+        <label htmlFor="first-name" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
           First name
         </label>
-        <div className="mt-2.5">
+        <div className="mt-1">
           <input
             type="text"
             name="first-name"
             id="first-name"
             autoComplete="given-name"
             required
-            className="block w-full rounded-md border-0 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
+            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors placeholder:text-zinc-600 font-light text-sm"
           />
         </div>
       </div>
       <div>
-        <label htmlFor="last-name" className="block text-sm font-semibold leading-6 text-zinc-900">
+        <label htmlFor="last-name" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
           Last name
         </label>
-        <div className="mt-2.5">
+        <div className="mt-1">
           <input
             type="text"
             name="last-name"
             id="last-name"
             autoComplete="family-name"
             required
-            className="block w-full rounded-md border-0 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
+            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
           />
         </div>
       </div>
       <div className="sm:col-span-2">
-        <label htmlFor="company" className="block text-sm font-semibold leading-6 text-zinc-900">
+        <label htmlFor="company" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
           Company / Business name
         </label>
-        <div className="mt-2.5">
+        <div className="mt-1">
           <input
             type="text"
             name="company"
             id="company"
             autoComplete="organization"
             required
-            className="block w-full rounded-md border-0 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
+            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
           />
         </div>
       </div>
       <div className="sm:col-span-2">
-        <label htmlFor="email" className="block text-sm font-semibold leading-6 text-zinc-900">
+        <label htmlFor="email" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
           Work Email
         </label>
-        <div className="mt-2.5">
+        <div className="mt-1">
           <input
             type="email"
             name="email"
             id="email"
             autoComplete="email"
             required
-            className="block w-full rounded-md border-0 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
+            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
           />
         </div>
       </div>
       <div className="sm:col-span-2">
-        <label htmlFor="message" className="block text-sm font-semibold leading-6 text-zinc-900">
+        <label htmlFor="message" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
           Tell us about your needs
         </label>
-        <div className="mt-2.5">
+        <div className="mt-1">
           <textarea
             name="message"
             id="message"
             rows={4}
             placeholder="E.g. I need a quote for 2 commercial ovens and weekly flour supply."
-            className="block w-full rounded-md border-0 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
+            className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors placeholder:text-zinc-600 font-light text-sm"
             defaultValue={''}
           />
         </div>
       </div>
-      <div className="sm:col-span-2">
+      <div className="sm:col-span-2 mt-4">
         <Button
           type="submit"
           disabled={status === 'loading'}
-          className="w-full"
+          variant="premium"
+          className="w-full py-4 text-lg uppercase tracking-widest font-bold"
         >
           {status === 'loading' ? 'Sending...' : 'Request a Quote'}
         </Button>
