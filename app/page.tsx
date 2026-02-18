@@ -74,7 +74,7 @@ export default function Home() {
             description: "Customise with your own ingredients and sauces.",
           },
           {
-            title: "Professional Bake",
+            title: "Oven Bake",
             description: "Bake at 240–360°C for authentic results.",
           },
           {
