@@ -25,8 +25,6 @@ export default function Home() {
         subtitle="Handmade in Naples. Preservative-free. Ambient shelf life up to 3 months. Designed for hospitality operators."
         primaryCtaLabel="Book a Live Tasting Demo"
         primaryCtaLink="/book-a-demo"
-        secondaryCtaLabel="Download Product Overview"
-        secondaryCtaLink="/pizza-bases"
       />
       
       {/* Section 2 – The Core Problem */}

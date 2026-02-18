@@ -8,8 +8,8 @@ interface HeroProps {
   subtitle: string;
   primaryCtaLabel: string;
   primaryCtaLink: string;
-  secondaryCtaLabel: string;
-  secondaryCtaLink: string;
+  secondaryCtaLabel?: string;
+  secondaryCtaLink?: string;
 }
 
 export const Hero: React.FC<HeroProps> = ({
@@ -47,9 +47,11 @@ export const Hero: React.FC<HeroProps> = ({
             <Button href={primaryCtaLink} size="lg" variant="premium">
               {primaryCtaLabel}
             </Button>
-            <Button href={secondaryCtaLink} variant="outline" size="lg" className="text-white border-zinc-700 hover:bg-zinc-800">
-              {secondaryCtaLabel}
-            </Button>
+            {secondaryCtaLabel && secondaryCtaLink && (
+              <Button href={secondaryCtaLink} variant="outline" size="lg" className="text-white border-zinc-700 hover:bg-zinc-800">
+                {secondaryCtaLabel}
+              </Button>
+            )}
           </div>
 
           <div className="mt-16 flex flex-wrap items-center gap-x-8 gap-y-4 text-sm font-semibold text-zinc-400 uppercase tracking-widest">
