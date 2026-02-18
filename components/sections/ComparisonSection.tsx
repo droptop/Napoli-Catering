@@ -60,8 +60,8 @@ export const ComparisonSection = () => {
                 "Industrial production",
                 "Frozen storage required"
               ].map((item, index) => (
-                <li key={index} className="flex items-center gap-3 text-zinc-400 font-light">
-                  <svg className="h-5 w-5 text-zinc-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <li key={index} className="flex items-center gap-3 text-white font-medium">
+                  <svg className="h-5 w-5 text-[#c5a059]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <circle cx="12" cy="12" r="10" />
                     <path d="M16 16s-1.5-2-4-2-4 2-4 2" />
                     <line x1="9" y1="9" x2="9.01" y2="9" />
