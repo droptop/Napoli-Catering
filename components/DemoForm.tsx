@@ -24,19 +24,19 @@ export const DemoForm = () => {
 
   if (status === 'success') {
     return (
-      <div className="rounded-3xl bg-[#fcfaf7] p-10 text-center border border-[#c5a059]/20 shadow-sm">
-        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-600 mb-6">
+      <div className="rounded-3xl bg-white/5 backdrop-blur-md p-10 text-center border border-[#c5a059]/30 shadow-sm">
+        <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#c5a059]/10 text-[#c5a059] mb-6">
           <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="text-2xl font-serif font-light text-zinc-900 mb-4">Request Received</h3>
-        <p className="text-zinc-600 font-light leading-relaxed">
+        <h3 className="text-2xl font-serif font-light text-white mb-4 uppercase tracking-widest">Request Received</h3>
+        <p className="text-zinc-400 font-light leading-relaxed">
           Thank you for your interest. A specialist from Napoli Catering Co. will contact you within 24 hours to schedule your live tasting demonstration.
         </p>
-        <Button 
-          variant="outline" 
-          className="mt-8 border-zinc-200 text-zinc-500 hover:bg-zinc-50" 
+        <Button
+          variant="outline"
+          className="mt-8 border-white/10 text-white hover:bg-white/5"
           onClick={() => setStatus('idle')}
         >
           Request another demo
@@ -48,7 +48,7 @@ export const DemoForm = () => {
   return (
     <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
       <div className="sm:col-span-2">
-        <label htmlFor="business-name" className="block text-sm font-bold uppercase tracking-widest text-zinc-400 mb-2">
+        <label htmlFor="business-name" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
           Business Name
         </label>
         <input
@@ -56,13 +56,13 @@ export const DemoForm = () => {
           name="business-name"
           id="business-name"
           required
-          className="block w-full bg-zinc-50 border-0 border-b border-zinc-200 py-3 text-zinc-900 focus:ring-0 focus:border-[#c5a059] transition-colors placeholder:text-zinc-300"
+          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors placeholder:text-zinc-600 font-light text-sm"
           placeholder="E.g. Amsterdam Golf Club"
         />
       </div>
-      
+
       <div>
-        <label htmlFor="location" className="block text-sm font-bold uppercase tracking-widest text-zinc-400 mb-2">
+        <label htmlFor="location" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
           Location (City)
         </label>
         <input
@@ -70,44 +70,44 @@ export const DemoForm = () => {
           name="location"
           id="location"
           required
-          className="block w-full bg-zinc-50 border-0 border-b border-zinc-200 py-3 text-zinc-900 focus:ring-0 focus:border-[#c5a059] transition-colors"
+          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
         />
       </div>
 
       <div>
-        <label htmlFor="industry" className="block text-sm font-bold uppercase tracking-widest text-zinc-400 mb-2">
+        <label htmlFor="industry" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
           Industry Type
         </label>
         <select
           id="industry"
           name="industry"
-          className="block w-full bg-zinc-50 border-0 border-b border-zinc-200 py-3 text-zinc-900 focus:ring-0 focus:border-[#c5a059] transition-colors"
+          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
         >
-          <option>Golf Club</option>
-          <option>Catering Company</option>
-          <option>Bar / Hospitality Venue</option>
-          <option>Other</option>
+          <option className="bg-zinc-900">Golf Club</option>
+          <option className="bg-zinc-900">Catering Company</option>
+          <option className="bg-zinc-900">Bar / Hospitality Venue</option>
+          <option className="bg-zinc-900">Other</option>
         </select>
       </div>
 
       <div>
-        <label htmlFor="volume" className="block text-sm font-bold uppercase tracking-widest text-zinc-400 mb-2">
+        <label htmlFor="volume" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
           Est. Weekly Volume
         </label>
         <select
           id="volume"
           name="volume"
-          className="block w-full bg-zinc-50 border-0 border-b border-zinc-200 py-3 text-zinc-900 focus:ring-0 focus:border-[#c5a059] transition-colors"
+          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
         >
-          <option>50 - 100 bases</option>
-          <option>100 - 250 bases</option>
-          <option>250 - 500 bases</option>
-          <option>500+ bases</option>
+          <option className="bg-zinc-900">50 - 100 bases</option>
+          <option className="bg-zinc-900">100 - 250 bases</option>
+          <option className="bg-zinc-900">250 - 500 bases</option>
+          <option className="bg-zinc-900">500+ bases</option>
         </select>
       </div>
 
       <div>
-        <label htmlFor="email" className="block text-sm font-bold uppercase tracking-widest text-zinc-400 mb-2">
+        <label htmlFor="email" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
           Work Email
         </label>
         <input
@@ -116,12 +116,12 @@ export const DemoForm = () => {
           id="email"
           autoComplete="email"
           required
-          className="block w-full bg-zinc-50 border-0 border-b border-zinc-200 py-3 text-zinc-900 focus:ring-0 focus:border-[#c5a059] transition-colors"
+          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
         />
       </div>
 
       <div className="sm:col-span-2">
-        <label htmlFor="contact-name" className="block text-sm font-bold uppercase tracking-widest text-zinc-400 mb-2">
+        <label htmlFor="contact-name" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
           Contact Name
         </label>
         <input
@@ -129,7 +129,7 @@ export const DemoForm = () => {
           name="contact-name"
           id="contact-name"
           required
-          className="block w-full bg-zinc-50 border-0 border-b border-zinc-200 py-3 text-zinc-900 focus:ring-0 focus:border-[#c5a059] transition-colors"
+          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
         />
       </div>
 

@@ -10,17 +10,30 @@ export const metadata = getMetadata({
 
 export default function BookDemoPage() {
   return (
-    <main className="py-24">
-      <Container>
+    <main className="py-24 pt-32 relative overflow-hidden bg-zinc-950 text-white">
+      {/* Premium Background: Wood Texture */}
+      <div
+        className="absolute inset-0 z-0 opacity-40 grayscale"
+        style={{
+          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fa6dc89c6e32041c6a517dcb956241527?format=webp&width=1600&height=1200')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      />
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 z-0 bg-zinc-950/60" />
+
+      <Container className="relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <div>
-            <h1 className="text-4xl font-serif font-light tracking-tight text-zinc-900 sm:text-6xl mb-8">
+            <h1 className="text-4xl font-serif font-light tracking-tight text-white sm:text-6xl mb-8 uppercase tracking-widest leading-tight">
               Book a Live Demonstration
             </h1>
-            <p className="text-xl text-zinc-600 leading-relaxed mb-12 font-light">
+            <p className="text-xl text-zinc-300 leading-relaxed mb-12 font-light">
               Experience the quality and operational simplicity of our Neapolitan sourdough bases firsthand. We bring everything needed to deliver an authentic tasting in your own kitchen.
             </p>
-            
+
             <div className="space-y-12">
               {[
                 { title: "What we bring", desc: "A portable professional oven, our premium sourdough bases, and DOP ingredients." },
@@ -28,20 +41,20 @@ export default function BookDemoPage() {
                 { title: "No obligation", desc: "This is a technical demonstration for hospitality professionals. No pressure to buy on the day." }
               ].map((item, index) => (
                 <div key={index} className="flex gap-6">
-                  <div className="h-10 w-10 rounded-full bg-[#fcfaf7] border border-[#c5a059]/30 flex items-center justify-center shrink-0">
+                  <div className="h-10 w-10 rounded-full bg-white/5 border border-[#c5a059]/30 flex items-center justify-center shrink-0 shadow-sm">
                     <span className="text-[#c5a059] font-serif italic text-lg">{index + 1}</span>
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-zinc-900 uppercase tracking-widest mb-2">{item.title}</h3>
-                    <p className="text-zinc-500 font-light leading-relaxed">{item.desc}</p>
+                    <h3 className="text-sm font-bold text-[#c5a059] uppercase tracking-widest mb-2">{item.title}</h3>
+                    <p className="text-zinc-400 font-light leading-relaxed text-sm">{item.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          
-          <div className="bg-white p-8 sm:p-12 rounded-3xl shadow-2xl shadow-zinc-200/50 border border-zinc-100">
-            <h2 className="text-2xl font-serif font-light mb-8 text-[#c5a059] border-b border-zinc-50 pb-4 uppercase tracking-widest">Demo Request</h2>
+
+          <div className="bg-white/5 backdrop-blur-md p-8 sm:p-12 rounded-3xl shadow-2xl border border-white/10">
+            <h2 className="text-2xl font-serif font-light mb-8 text-[#c5a059] border-b border-white/5 pb-4 uppercase tracking-widest">Demo Request</h2>
             <DemoForm />
           </div>
         </div>
