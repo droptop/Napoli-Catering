@@ -25,7 +25,8 @@ const industries = [
   {
     title: "Bars & Hospitality Venues",
     problem: "Minimal kitchen infrastructure. Desire to add a food offering without full kitchen renovations or trained chefs.",
-    solution: "Turn any bar into a premium pizza venue. Our bases work in standard ovens. Add a high-margin food category with minimal operational friction and no freezer space needed."
+    solution: "Turn any bar into a premium pizza venue. Our bases work in standard ovens. Add a high-margin food category with minimal operational friction and no freezer space needed.",
+    icon: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F0bcb4f97bcaf4d8cb8d248239d74092f?format=webp&width=800&height=1200"
   }
 ];
 
