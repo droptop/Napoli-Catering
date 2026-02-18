@@ -4,14 +4,13 @@ import { Container } from '../ui/Container';
 export const HeritageSection = () => {
   return (
     <section className="py-32 bg-[#fcfaf7] overflow-hidden relative">
-      <div className="absolute inset-0 z-0 opacity-5 grayscale pointer-events-none">
-        {/* Heritage image - background texture placeholder */}
-        <img 
-          src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fbcc909982e1e49609241be4fcdf9e20d?format=webp&width=1600&height=1200" 
-          alt="Napoli Heritage" 
-          className="w-full h-full object-cover"
-        />
-      </div>
+      <div className="absolute inset-0 z-0 opacity-[0.03] grayscale pointer-events-none"
+        style={{
+          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fa6dc89c6e32041c6a517dcb956241527?format=webp&width=800&height=1200')`,
+          backgroundRepeat: 'repeat',
+          backgroundSize: '400px'
+        }}
+      />
       
       <Container className="relative z-10 text-center">
         <div className="max-w-3xl mx-auto">

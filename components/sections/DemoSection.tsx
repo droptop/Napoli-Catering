@@ -7,15 +7,14 @@ export const DemoSection = () => {
   return (
     <section className="py-24 bg-zinc-950 text-white relative overflow-hidden">
       {/* Background image placeholder - heritage/demo look */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fbcc909982e1e49609241be4fcdf9e20d?format=webp&width=1600&height=1200"
-          alt="Napoli Catering Demo"
-          fill
-          className="object-cover opacity-30 grayscale"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-transparent" />
-      </div>
+      <div className="absolute inset-0 z-0 opacity-40 grayscale"
+        style={{
+          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fa6dc89c6e32041c6a517dcb956241527?format=webp&width=800&height=1200')`,
+          backgroundRepeat: 'repeat',
+          backgroundSize: '400px'
+        }}
+      />
+      <div className="absolute inset-0 z-0 bg-gradient-to-t from-zinc-950 via-zinc-950/60 to-transparent" />
 
       <Container className="relative z-10">
         <div className="max-w-4xl mx-auto text-center">
