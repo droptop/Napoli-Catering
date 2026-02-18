@@ -10,7 +10,7 @@ export const DemoSection = () => {
       <div className="absolute inset-x-0 bottom-0 h-1/2 z-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent" />
 
       <Container className="relative z-10">
-        <div className="relative z-20 max-w-4xl mx-auto text-center mb-12 sm:mb-16">
+        <div className="relative z-20 max-w-4xl mx-auto text-center mb-[-120px] sm:mb-[-180px]">
           <h2 className="text-4xl font-serif font-light tracking-tight sm:text-6xl mb-6">
             See It. Taste It. Decide.
           </h2>
@@ -21,7 +21,7 @@ export const DemoSection = () => {
         </div>
       </Container>
 
-      <div className="relative z-10 w-full h-[500px] sm:h-[700px] overflow-hidden">
+      <div className="relative z-10 w-full h-[600px] sm:h-[800px] overflow-hidden">
         <Image
           src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fb058fcc307c9493e8c34df05a584e016?format=webp&width=1600&height=1200"
           alt="Live tasting demo with professional oven"
@@ -29,11 +29,11 @@ export const DemoSection = () => {
           className="object-cover"
         />
         {/* Subtle inner shadow/vignette for better integration */}
-        <div className="absolute inset-0 shadow-[inset_0_0_150px_rgba(0,0,0,0.4)]" />
+        <div className="absolute inset-0 shadow-[inset_0_0_200px_rgba(0,0,0,0.5)]" />
       </div>
 
       <Container className="relative z-10">
-        <div className="relative z-20 max-w-5xl mx-auto mt-[-80px] sm:mt-[-120px]">
+        <div className="relative z-20 max-w-5xl mx-auto mt-[-120px] sm:mt-[-180px]">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-left mb-16">
             {[
               {

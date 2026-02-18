@@ -81,7 +81,7 @@ export const Navbar = () => {
                 </Link>
               ))}
               <div className="px-3 py-4">
-                <Button href="/book-a-demo" className="w-full">
+                <Button href="/book-a-demo" variant="premium" className="w-full">
                   Book a Demo
                 </Button>
               </div>
