@@ -36,11 +36,11 @@ export default function AboutPage() {
                 Napoli Catering Co. was founded to bridge the gap between ancient Italian tradition and the modern Dutch hospitality industry. We specialize in one thing: providing the foundations for authentic Neapolitan pizza.
               </p>
             </div>
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F989e54cd20a049c1b8d9eb6dbd31e358?format=webp&width=800&height=1200"
                 alt="Napalese illustration"
-                className="h-64 sm:h-80 md:h-96 w-auto opacity-80 transition-opacity hover:opacity-100"
+                className="h-52 sm:h-64 md:h-80 w-auto opacity-80 transition-opacity hover:opacity-100"
               />
             </div>
           </div>
