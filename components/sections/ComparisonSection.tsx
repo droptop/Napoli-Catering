@@ -21,9 +21,9 @@ export const ComparisonSection = () => {
         <h2 className="text-3xl font-serif font-light tracking-tight text-white sm:text-4xl text-center mb-16 uppercase tracking-widest">
           Not a Supermarket Base
         </h2>
-        <div className="flex flex-col md:flex-row md:items-stretch md:justify-center gap-12 lg:gap-24">
+        <div className="flex flex-col md:flex-row md:items-stretch md:justify-center gap-12 lg:gap-32">
           {/* Napoli Base */}
-          <div className="flex-1">
+          <div className="flex-1 pl-8 sm:pl-12 lg:pl-20">
             <h3 className="text-2xl font-serif font-light text-[#c5a059] mb-8 uppercase tracking-widest">Napoli Base</h3>
             <ul className="space-y-4">
               {[
