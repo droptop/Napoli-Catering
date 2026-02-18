@@ -38,7 +38,7 @@ export default function PizzaBasesPage() {
                 Our bases are not just another convenience product. They are a technical solution for kitchens that demand authenticity without the traditional labour and skill requirements of dough management.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-md p-8 sm:p-12 rounded-3xl shadow-2xl border border-white/10">
+            <div className="bg-white/5 backdrop-blur-md p-8 sm:p-12 shadow-2xl border border-white/10">
               <h2 className="text-2xl font-serif font-light text-[#c5a059] mb-8 border-b border-white/5 pb-4 uppercase tracking-widest">Pizza Base Specifications</h2>
               <dl className="space-y-4">
                 {[
@@ -73,7 +73,7 @@ export default function PizzaBasesPage() {
           }}
         />
         <Container className="relative z-10">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl pl-8 sm:pl-12 lg:pl-16">
             <h2 className="text-3xl font-serif font-light tracking-tight text-[#c5a059] sm:text-4xl mb-12 uppercase tracking-widest">
               Structure & Performance
             </h2>
@@ -96,13 +96,13 @@ export default function PizzaBasesPage() {
                   content: "Our bases are engineered to withstand the intense heat of professional pizza ovens (up to 450°C) without burning or losing structural integrity, while still performing exceptionally in standard 240°C convection ovens."
                 }
               ].map((item, index) => (
-                <div key={index} className="flex gap-6 items-stretch">
+                <div key={index} className="flex gap-12 items-stretch">
                   <div className="flex shrink-0">
                     <div className="w-[2px] bg-[#008C45]" />
                     <div className="w-[2px] bg-[#F4F5F0]" />
                     <div className="w-[2px] bg-[#CD212A]" />
                   </div>
-                  <div>
+                  <div className="pl-4 sm:pl-8">
                     <h3 className="text-xl font-bold text-[#c5a059] mb-3 uppercase tracking-widest">{item.title}</h3>
                     <p className="text-white font-light leading-relaxed">{item.content}</p>
                   </div>
