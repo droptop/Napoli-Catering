@@ -93,7 +93,7 @@ export default function AboutPage() {
         <Container>
           <div className="space-y-24">
             <div className="space-y-12">
-              <h2 className="text-3xl font-serif font-light text-white mb-12 uppercase tracking-widest text-center">Main Offering</h2>
+              <h2 className="text-3xl font-serif font-light text-white mb-12 uppercase tracking-widest text-center">How we can help you:</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {[
                   {
