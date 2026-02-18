@@ -181,6 +181,7 @@ export default function PizzaBasesPage() {
         ctaLabel="Book a Live Demo"
         ctaLink="/book-a-demo"
         showSketchBackground
+        showItalianLine
       />
     </main>
   );

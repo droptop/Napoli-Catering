@@ -11,6 +11,7 @@ interface CTASectionProps {
   ctaLink: string;
   showSketchBackground?: boolean;
   variant?: 'default' | 'flat';
+  showItalianLine?: boolean;
 }
 
 export const CTASection: React.FC<CTASectionProps> = ({
@@ -20,6 +21,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
   ctaLink,
   showSketchBackground = false,
   variant = 'default',
+  showItalianLine = false,
 }) => {
   const isFlat = variant === 'flat';
 
@@ -66,7 +68,12 @@ export const CTASection: React.FC<CTASectionProps> = ({
             <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-zinc-400 font-light">
               {subtitle}
             </p>
-            <div className="mt-10 flex items-center justify-center gap-x-6">
+            {showItalianLine && (
+              <div className="mt-8">
+                <WavyItalianSeparator />
+              </div>
+            )}
+            <div className={`${showItalianLine ? 'mt-8' : 'mt-10'} flex items-center justify-center gap-x-6`}>
               <Button href={ctaLink} size="lg" variant="premium">
                 {ctaLabel}
               </Button>
