@@ -54,7 +54,7 @@ export default function AboutPage() {
                <img
                  src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fcfdac20eee0749ec933ad9d776b0491d?format=webp&width=1600&height=1200"
                  alt="Naples Map"
-                 className="max-w-full h-auto grayscale opacity-60"
+                 className="max-w-[80%] h-auto grayscale opacity-60"
                />
             </div>
             <div className="lg:border-l lg:border-[#c5a059] lg:pl-16">
