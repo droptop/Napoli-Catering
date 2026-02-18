@@ -33,6 +33,7 @@ export default function Home() {
       {/* Section 3 – The Product (Main Selling Block) */}
       <ValueProps
         heading="The Napoli Pizza Base"
+        showSketchBackground
         items={[
           {
             title: "Authentic Sourdough",
