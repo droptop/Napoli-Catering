@@ -40,12 +40,12 @@ export default function BookDemoPage() {
                 { title: "What you’ll experience", desc: "A technical walkthrough of the preparation, baking process, and a full sensory tasting." },
                 { title: "No obligation", desc: "This is a technical demonstration for hospitality professionals. No pressure to buy on the day." }
               ].map((item, index) => (
-                <div key={index} className="flex gap-6">
-                  <div className="h-10 w-10 rounded-full bg-white/5 border border-[#c5a059]/30 flex items-center justify-center shrink-0 shadow-sm">
-                    <span className="text-[#c5a059] font-serif italic text-lg">{index + 1}</span>
+                <div key={index} className="flex gap-6 items-center">
+                  <div className="h-12 w-12 rounded-full bg-white/5 border-2 border-[#c5a059] flex items-center justify-center shrink-0 shadow-sm">
+                    <span className="text-[#c5a059] font-sans font-semibold text-xl">{index + 1}</span>
                   </div>
                   <div>
-                    <h3 className="text-sm font-bold text-[#c5a059] uppercase tracking-widest mb-2">{item.title}</h3>
+                    <h3 className="text-sm font-bold text-white uppercase tracking-widest mb-1">{item.title}</h3>
                     <p className="text-zinc-400 font-light leading-relaxed text-sm">{item.desc}</p>
                   </div>
                 </div>
