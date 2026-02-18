@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container } from "@/components/ui/Container";
 import { CTASection } from "@/components/sections/CTASection";
 import { Button } from "@/components/ui/Button";
@@ -64,41 +65,52 @@ export default function IndustriesPage() {
         <Container>
           <div className="space-y-32">
             {industries.map((item, index) => (
-              <div key={index} className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-                <div className="pl-8 sm:pl-12 lg:pl-16">
-                  <h2 className="text-3xl font-serif font-light tracking-tight text-[#c5a059] sm:text-4xl mb-6 uppercase tracking-widest">
-                    Pizza for {item.title}
-                  </h2>
-                  <div className="space-y-8">
-                    <div>
-                      <h3 className="text-sm font-bold uppercase tracking-widest text-[#c5a059] mb-2">The Problem</h3>
-                      <p className="text-xl text-white font-light leading-relaxed">{item.problem}</p>
-                    </div>
-                    <div>
-                      <h3 className="text-sm font-bold uppercase tracking-widest text-white/60 mb-2">The Solution</h3>
-                      <p className="text-xl text-zinc-400 font-light leading-relaxed">{item.solution}</p>
+              <React.Fragment key={index}>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+                  <div className="pl-8 sm:pl-12 lg:pl-16">
+                    <h2 className="text-3xl font-serif font-light tracking-tight text-[#c5a059] sm:text-4xl mb-6 uppercase tracking-widest">
+                      Pizza for {item.title}
+                    </h2>
+                    <div className="space-y-8">
+                      <div>
+                        <h3 className="text-sm font-bold uppercase tracking-widest text-[#c5a059] mb-2">The Problem</h3>
+                        <p className="text-xl text-white font-light leading-relaxed">{item.problem}</p>
+                      </div>
+                      <div>
+                        <h3 className="text-sm font-bold uppercase tracking-widest text-white/60 mb-2">The Solution</h3>
+                        <p className="text-xl text-zinc-400 font-light leading-relaxed">{item.solution}</p>
+                      </div>
                     </div>
                   </div>
+                  <div
+                    className={`aspect-video relative overflow-hidden flex items-center justify-center text-[#c5a059] font-serif italic text-xl uppercase tracking-widest ${item.icon ? '' : 'border border-white/10'}`}
+                    style={item.icon ? {} : {
+                      backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F911c671c9bd5429ca0699a0004064868?format=webp&width=1600&height=1200')`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat',
+                      opacity: 0.5,
+                      filter: 'invert(1)'
+                    }}
+                  >
+                    {!item.icon && <div className="absolute inset-0 bg-black/40 z-0" />}
+                    {item.icon ? (
+                      <img src={item.icon} className="h-48 w-auto relative z-10" alt={`${item.title} icon`} />
+                    ) : (
+                      <span className="relative z-10">{item.title} Context</span>
+                    )}
+                  </div>
                 </div>
-                <div
-                  className={`aspect-video relative overflow-hidden flex items-center justify-center text-[#c5a059] font-serif italic text-xl uppercase tracking-widest ${item.icon ? '' : 'border border-white/10'}`}
-                  style={item.icon ? {} : {
-                    backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F911c671c9bd5429ca0699a0004064868?format=webp&width=1600&height=1200')`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    opacity: 0.5,
-                    filter: 'invert(1)'
-                  }}
-                >
-                  {!item.icon && <div className="absolute inset-0 bg-black/40 z-0" />}
-                  {item.icon ? (
-                    <img src={item.icon} className="h-48 w-auto relative z-10" alt={`${item.title} icon`} />
-                  ) : (
-                    <span className="relative z-10">{item.title} Context</span>
-                  )}
-                </div>
-              </div>
+                {index < industries.length - 1 && (
+                  <div className="flex justify-center py-16">
+                    <div className="w-1/3 flex flex-col shrink-0">
+                      <div className="h-[2px] w-full bg-[#008C45]" />
+                      <div className="h-[2px] w-full bg-[#F4F5F0]" />
+                      <div className="h-[2px] w-full bg-[#CD212A]" />
+                    </div>
+                  </div>
+                )}
+              </React.Fragment>
             ))}
           </div>
         </Container>
