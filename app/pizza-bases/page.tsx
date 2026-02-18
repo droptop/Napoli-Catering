@@ -39,7 +39,7 @@ export default function PizzaBasesPage() {
               </p>
             </div>
             <div className="bg-white/5 backdrop-blur-md p-8 sm:p-12 rounded-3xl shadow-2xl border border-white/10">
-              <h2 className="text-2xl font-serif font-light text-[#c5a059] mb-8 border-b border-white/5 pb-4 uppercase tracking-widest">Specifications</h2>
+              <h2 className="text-2xl font-serif font-light text-[#c5a059] mb-8 border-b border-white/5 pb-4 uppercase tracking-widest">Pizza Base Specifications</h2>
               <dl className="space-y-4">
                 {[
                   { label: "Fermentation", value: "24 hours" },
