@@ -12,12 +12,13 @@ export const metadata = getMetadata({
 const industries = [
   {
     title: "Sports Clubs",
-    problem: "Limited kitchen staff. Seasonal traffic spikes. Need for premium offerings without high labor costs.",
-    solution: "Ambient bases allow for instant response to traffic spikes. No specialized dough skill required. Premium sourdough perception increases club satisfaction and margins."
+    problem: "Limited kitchen staff. Seasonal traffic spikes. Need for premium offerings without high labour costs.",
+    solution: "Ambient bases allow for instant response to traffic spikes. No specialised dough skill required. Premium sourdough perception increases club satisfaction and margins.",
+    icon: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F18969ee3770449bcbb0d955a4a2b5bdc?format=webp&width=800&height=1200"
   },
   {
     title: "Catering Companies",
-    problem: "High labor pressure during events. Event-based demand fluctuations. Logistics complexity of frozen products.",
+    problem: "High labour pressure during events. Event-based demand fluctuations. Logistics complexity of frozen products.",
     solution: "Consistent, high-quality output regardless of event scale. Ambient storage removes the need for refrigerated transport. High margin potential for corporate and private events."
   },
   {
@@ -77,8 +78,8 @@ export default function IndustriesPage() {
                   </div>
                 </div>
                 <div
-                  className="aspect-video relative overflow-hidden border border-white/10 flex items-center justify-center text-[#c5a059] font-serif italic text-xl uppercase tracking-widest"
-                  style={{
+                  className={`aspect-video relative overflow-hidden flex items-center justify-center text-[#c5a059] font-serif italic text-xl uppercase tracking-widest ${item.icon ? '' : 'border border-white/10'}`}
+                  style={item.icon ? {} : {
                     backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F911c671c9bd5429ca0699a0004064868?format=webp&width=1600&height=1200')`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -86,8 +87,12 @@ export default function IndustriesPage() {
                     opacity: 0.5
                   }}
                 >
-                  <div className="absolute inset-0 bg-black/40 z-0" />
-                  <span className="relative z-10">{item.title} Context</span>
+                  {!item.icon && <div className="absolute inset-0 bg-black/40 z-0" />}
+                  {item.icon ? (
+                    <img src={item.icon} className="h-64 w-auto relative z-10" alt={`${item.title} icon`} />
+                  ) : (
+                    <span className="relative z-10">{item.title} Context</span>
+                  )}
                 </div>
               </div>
             ))}
