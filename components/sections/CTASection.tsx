@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
+import { WavyItalianSeparator } from '../ui/WavyItalianSeparator';
 
 interface CTASectionProps {
   title: string;
@@ -26,12 +27,8 @@ export const CTASection: React.FC<CTASectionProps> = ({
     <section className="py-24">
       <Container>
         {isFlat && (
-          <div className="mb-16 flex justify-center">
-            <div className="w-48 flex flex-col shrink-0">
-              <div className="h-[2px] w-full bg-[#008C45]" />
-              <div className="h-[2px] w-full bg-[#F4F5F0]" />
-              <div className="h-[2px] w-full bg-[#CD212A]" />
-            </div>
+          <div className="mb-16">
+            <WavyItalianSeparator />
           </div>
         )}
 
@@ -78,12 +75,8 @@ export const CTASection: React.FC<CTASectionProps> = ({
         </div>
 
         {isFlat && (
-          <div className="mt-16 flex justify-center">
-            <div className="w-48 flex flex-col shrink-0">
-              <div className="h-[2px] w-full bg-[#008C45]" />
-              <div className="h-[2px] w-full bg-[#F4F5F0]" />
-              <div className="h-[2px] w-full bg-[#CD212A]" />
-            </div>
+          <div className="mt-16">
+            <WavyItalianSeparator />
           </div>
         )}
       </Container>
