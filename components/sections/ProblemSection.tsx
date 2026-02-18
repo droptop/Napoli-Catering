@@ -21,7 +21,7 @@ export const ProblemSection = () => {
             {[
               "Dough preparation requires skill, and time",
               "Staff are already stretched",
-              "Frozen bases compromise quality",
+              "Most frozen bases compromise on quality",
               "Authentic Neapolitan flavour is hard to replicate"
             ].map((bullet, index) => (
               <li key={index} className="flex items-start gap-4">
