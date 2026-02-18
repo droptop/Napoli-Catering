@@ -123,10 +123,10 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
-              { 
-                title: "Golf Clubs", 
+              {
+                title: "Sports Clubs",
                 description: "Optimise seasonal spikes and club catering with premium pizza offerings that don't stretch your team.",
-                href: "/industries" 
+                href: "/industries"
               },
               { 
                 title: "Catering Companies", 

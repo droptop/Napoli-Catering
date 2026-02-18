@@ -4,14 +4,14 @@ import { Button } from "@/components/ui/Button";
 import { getMetadata } from "@/lib/seo";
 
 export const metadata = getMetadata({
-  title: "Solutions for Hospitality Operators | Golf Clubs, Catering & Venues",
-  description: "Authentic Neapolitan pizza solutions for professional operators. Problem/Solution focus for golf clubs, catering companies, and bars in the NL.",
+  title: "Solutions for Hospitality Operators | Sports Clubs, Catering & Venues",
+  description: "Authentic Neapolitan pizza solutions for professional operators. Problem/Solution focus for sports clubs, catering companies, and bars in the NL.",
   path: "/industries",
 });
 
 const industries = [
   {
-    title: "Golf Clubs",
+    title: "Sports Clubs",
     problem: "Limited kitchen staff. Seasonal traffic spikes. Need for premium offerings without high labor costs.",
     solution: "Ambient bases allow for instant response to traffic spikes. No specialized dough skill required. Premium sourdough perception increases club satisfaction and margins."
   },
