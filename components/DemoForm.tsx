@@ -63,7 +63,7 @@ export const DemoForm = () => {
 
       <div>
         <label htmlFor="location" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
-          Location (City)
+          Address
         </label>
         <input
           type="text"
@@ -90,23 +90,7 @@ export const DemoForm = () => {
         </select>
       </div>
 
-      <div>
-        <label htmlFor="volume" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
-          Est. Weekly Volume
-        </label>
-        <select
-          id="volume"
-          name="volume"
-          className="block w-full bg-transparent border-0 border-b border-white/10 py-2 text-white focus:ring-0 focus:border-[#c5a059] transition-colors font-light text-sm"
-        >
-          <option className="bg-zinc-900">50 - 100 bases</option>
-          <option className="bg-zinc-900">100 - 250 bases</option>
-          <option className="bg-zinc-900">250 - 500 bases</option>
-          <option className="bg-zinc-900">500+ bases</option>
-        </select>
-      </div>
-
-      <div>
+      <div className="sm:col-span-2">
         <label htmlFor="email" className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-1">
           Work Email
         </label>
