@@ -27,12 +27,12 @@ export const ValueProps: React.FC<ValuePropsProps> = ({ heading, items, showSket
         />
       )}
       <Container className="relative z-10">
-        <h2 className="text-3xl font-serif font-light tracking-tight text-zinc-900 sm:text-4xl lg:text-5xl mb-16 uppercase tracking-widest">
+        <h2 className="text-3xl font-serif font-light tracking-tight text-zinc-900 sm:text-4xl lg:text-5xl mb-16 uppercase tracking-widest text-center">
           {heading}
         </h2>
         <div className={`grid grid-cols-1 gap-12 sm:grid-cols-2 ${items.length === 4 ? 'lg:grid-cols-4' : items.length === 5 ? 'lg:grid-cols-5' : 'lg:grid-cols-3'}`}>
           {items.map((item, index) => (
-            <div key={index} className="flex flex-col">
+            <div key={index} className="flex flex-col items-center text-center">
               <div className="h-12 w-12 rounded-full border border-[#c5a059] flex items-center justify-center text-[#c5a059] mb-8 shadow-sm transition-colors duration-300">
                 {item.icon || (
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
