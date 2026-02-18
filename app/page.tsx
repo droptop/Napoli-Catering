@@ -30,6 +30,24 @@ export default function Home() {
       {/* Section 2 – The Core Problem */}
       <ProblemSection />
 
+      {/* Separator Bar */}
+      <section className="relative py-8 bg-black overflow-hidden border-y border-white/5">
+        <div
+          className="absolute inset-0 z-0 opacity-30 grayscale"
+          style={{
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fa6dc89c6e32041c6a517dcb956241527?format=webp&width=1600&height=1200')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        />
+        <Container className="relative z-10">
+          <p className="text-[#c5a059] text-center font-serif text-xl sm:text-2xl font-light italic tracking-wide">
+            "We remove the friction without compromising authenticity"
+          </p>
+        </Container>
+      </section>
+
       {/* Section 3 – The Product (Main Selling Block) */}
       <ValueProps
         heading="The Napoli Pizza Base"

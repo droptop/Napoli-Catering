@@ -30,9 +30,6 @@ export const ProblemSection = () => {
               </li>
             ))}
           </ul>
-          <p className="mt-16 text-2xl text-zinc-900 font-serif font-light italic border-l-2 border-[#c5a059] pl-8">
-            We remove the friction without compromising authenticity.
-          </p>
         </div>
       </Container>
     </section>
