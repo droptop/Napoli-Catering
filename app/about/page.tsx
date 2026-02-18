@@ -218,6 +218,7 @@ export default function AboutPage() {
 
       <ValueProps
         heading="Our Core Values"
+        showSketchBackground
         items={[
           {
             title: "Authenticity",
@@ -254,6 +255,7 @@ export default function AboutPage() {
         subtitle="Experience our heritage sourdough bases firsthand with an on-site demonstration."
         ctaLabel="Book a Live Demo"
         ctaLink="/book-a-demo"
+        showSketchBackground
       />
     </main>
   );

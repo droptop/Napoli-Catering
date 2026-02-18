@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
 
@@ -15,6 +16,7 @@ const navigation = [
 
 export const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black">
@@ -27,7 +29,7 @@ export const Navbar = () => {
               </span>
             </Link>
           </div>
-          
+
           <div className="flex lg:hidden">
             <button
               type="button"
@@ -46,17 +48,27 @@ export const Navbar = () => {
               )}
             </button>
           </div>
-          
+
           <div className="hidden lg:flex lg:gap-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-xs font-semibold uppercase tracking-widest leading-6 text-white/70 hover:text-[#c5a059] transition-colors"
-              >
-                {item.name}
-              </Link>
-            ))}
+            {navigation.map((item) => {
+              const isActive = pathname === item.href;
+              return (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className={`text-xs font-semibold uppercase tracking-widest leading-6 transition-all duration-300 relative py-1 ${
+                    isActive
+                      ? 'text-[#c5a059]'
+                      : 'text-white/70 hover:text-[#c5a059]'
+                  }`}
+                >
+                  {item.name}
+                  {isActive && (
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#c5a059] transition-all duration-300" />
+                  )}
+                </Link>
+              );
+            })}
           </div>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -65,21 +77,28 @@ export const Navbar = () => {
             </Button>
           </div>
         </nav>
-        
+
         {/* Mobile menu */}
         {mobileMenuOpen && (
           <div className="lg:hidden">
-            <div className="space-y-1 pb-4 pt-2">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="block rounded-none px-3 py-2 text-base font-semibold leading-7 text-white/90 hover:bg-white/10"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+            <div className="space-y-1 pb-4 pt-2 border-t border-white/5 mt-2">
+              {navigation.map((item) => {
+                const isActive = pathname === item.href;
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`block rounded-none px-3 py-3 text-base font-semibold leading-7 transition-colors ${
+                      isActive
+                        ? 'text-[#c5a059] bg-white/5 border-l-2 border-[#c5a059] pl-4'
+                        : 'text-white/90 hover:bg-white/10'
+                    }`}
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
               <div className="px-3 py-4">
                 <Button href="/book-a-demo" variant="premium" className="w-full">
                   Book a Demo
