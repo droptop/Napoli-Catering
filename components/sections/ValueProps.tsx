@@ -32,8 +32,8 @@ export const ValueProps: React.FC<ValuePropsProps> = ({ heading, items, showSket
         </h2>
         <div className={`grid grid-cols-1 gap-12 sm:grid-cols-2 ${items.length === 4 ? 'lg:grid-cols-4' : items.length === 5 ? 'lg:grid-cols-5' : 'lg:grid-cols-3'}`}>
           {items.map((item, index) => (
-            <div key={index} className="flex flex-col group">
-              <div className="h-12 w-12 rounded-full border border-[#c5a059]/30 flex items-center justify-center text-[#c5a059] mb-8 shadow-sm group-hover:bg-[#c5a059] group-hover:text-white transition-colors duration-300">
+            <div key={index} className="flex flex-col">
+              <div className="h-12 w-12 rounded-full border border-[#c5a059] flex items-center justify-center text-[#c5a059] mb-8 shadow-sm transition-colors duration-300">
                 {item.icon || (
                   <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
