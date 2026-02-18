@@ -35,9 +35,6 @@ export default function AboutPage() {
               <p className="text-xl text-zinc-300 leading-relaxed font-light">
                 Napoli Catering Co. was founded to bridge the gap between ancient Italian tradition and the modern Dutch hospitality industry. We specialize in providing the foundations for authentic Neapolitan pizza.
               </p>
-              <p className="mt-8 text-2xl font-serif font-light italic text-[#c5a059] border-l-2 border-[#c5a059] pl-8">
-                “Your one stop solution for Authentic Neapolitan Pizza”
-              </p>
             </div>
             <div className="flex justify-center">
               <img
@@ -50,14 +47,33 @@ export default function AboutPage() {
         </Container>
       </section>
 
+      {/* Separator Bar */}
+      <section className="relative py-8 bg-white overflow-hidden border-y border-zinc-200">
+        <div
+          className="absolute inset-0 z-0 opacity-10 grayscale"
+          style={{
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fa6dc89c6e32041c6a517dcb956241527?format=webp&width=1600&height=1200')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            filter: 'invert(1)'
+          }}
+        />
+        <Container className="relative z-10">
+          <p className="text-black text-center font-serif text-xl sm:text-2xl font-light italic tracking-wide">
+            "Your one stop solution for Authentic Neapolitan Pizza"
+          </p>
+        </Container>
+      </section>
+
       <section className="py-24 relative overflow-hidden bg-white/5 backdrop-blur-sm border-y border-white/5">
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative flex items-center justify-center">
                <img
-                 src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fcfdac20eee0749ec933ad9d776b0491d?format=webp&width=1600&height=1200"
+                 src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F1f3ff3a8cc6e49aba4388aae53e1217d?format=webp&width=800&height=1200"
                  alt="Naples Map"
-                 className="max-w-[80%] h-auto grayscale opacity-60"
+                 className="max-w-[80%] h-auto"
                />
             </div>
             <div className="lg:border-l lg:border-[#c5a059] lg:pl-16">
@@ -66,7 +82,7 @@ export default function AboutPage() {
                 We believe that authenticity shouldn't be a luxury reserved for the few. Our mission is to empower professional kitchens across the NL to serve true Neapolitan sourdough pizza without the complexity of traditional dough preparation.
               </p>
               <p className="text-zinc-400 text-lg leading-relaxed font-light">
-                By sourcing our bases directly from artisanal producers in Naples and managing a specialized ambient supply chain, we ensure every kitchen has access to heritage-grade ingredients.
+                By sourcing our bases directly from artisanal producers in <img src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F1f3ff3a8cc6e49aba4388aae53e1217d?format=webp&width=800&height=1200" alt="Naples" className="inline-block h-6 w-auto mx-1 align-middle" /> and managing a specialized ambient supply chain, we ensure every kitchen has access to heritage-grade ingredients.
               </p>
             </div>
           </div>

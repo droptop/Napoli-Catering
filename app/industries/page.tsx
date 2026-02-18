@@ -65,7 +65,7 @@ export default function IndustriesPage() {
           <div className="space-y-32">
             {industries.map((item, index) => (
               <div key={index} className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-                <div>
+                <div className="pl-8 sm:pl-12 lg:pl-16">
                   <h2 className="text-3xl font-serif font-light tracking-tight text-[#c5a059] sm:text-4xl mb-6 uppercase tracking-widest">
                     Pizza for {item.title}
                   </h2>
