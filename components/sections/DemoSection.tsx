@@ -19,16 +19,20 @@ export const DemoSection = () => {
             You experience the difference.
           </p>
         </div>
+      </Container>
 
-        <div className="relative z-10 aspect-video w-full rounded-[40px] overflow-hidden border border-white/10 shadow-3xl">
-          <Image
-            src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fb058fcc307c9493e8c34df05a584e016?format=webp&width=1600&height=1200"
-            alt="Live tasting demo with professional oven"
-            fill
-            className="object-cover"
-          />
-        </div>
+      <div className="relative z-10 w-full h-[500px] sm:h-[700px] overflow-hidden">
+        <Image
+          src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fb058fcc307c9493e8c34df05a584e016?format=webp&width=1600&height=1200"
+          alt="Live tasting demo with professional oven"
+          fill
+          className="object-cover"
+        />
+        {/* Subtle inner shadow/vignette for better integration */}
+        <div className="absolute inset-0 shadow-[inset_0_0_150px_rgba(0,0,0,0.4)]" />
+      </div>
 
+      <Container className="relative z-10">
         <div className="relative z-20 max-w-5xl mx-auto mt-[-80px] sm:mt-[-120px]">
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-left mb-16">
             {[
