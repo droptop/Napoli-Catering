@@ -147,8 +147,8 @@ export default function AboutPage() {
                   }
                 ].map((item, index) => (
                   <div key={index} className="flex items-start gap-6 transition-all duration-300 group">
-                    <div className="h-14 w-14 rounded-full border-2 border-[#c5a059] flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 transition-transform bg-[#c5a059]/5">
-                      {item.icon}
+                    <div className="h-[68px] w-[68px] rounded-full border-2 border-[#c5a059] flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 transition-transform bg-[#c5a059]/5">
+                      {React.cloneElement(item.icon as React.ReactElement, { className: 'h-[34px] w-[34px] text-white' })}
                     </div>
                     <div>
                       <h3 className="text-[#c5a059] font-bold text-sm uppercase tracking-widest mb-2">{item.title}</h3>
@@ -208,8 +208,8 @@ export default function AboutPage() {
                   }
                 ].map((point, index) => (
                   <div key={index} className="flex flex-col items-center text-center gap-4">
-                    <div className="h-12 w-12 rounded-full border border-[#c5a059] bg-[#c5a059]/10 flex items-center justify-center shrink-0 text-[#c5a059]">
-                      {point.icon}
+                    <div className="h-[58px] w-[58px] rounded-full border border-[#c5a059] bg-[#c5a059]/10 flex items-center justify-center shrink-0 text-[#c5a059]">
+                      {React.cloneElement(point.icon as React.ReactElement, { className: 'h-6 w-6' })}
                     </div>
                     <div>
                       <h4 className="font-bold text-white uppercase tracking-widest text-sm mb-2">{point.title}</h4>
