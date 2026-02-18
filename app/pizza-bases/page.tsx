@@ -38,8 +38,8 @@ export default function PizzaBasesPage() {
                 Our bases are not just another convenience product. They are a technical solution for kitchens that demand authenticity without the traditional labour and skill requirements of dough management.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-md p-8 border border-[#c5a059]/30 shadow-sm">
-              <h2 className="text-sm font-bold uppercase tracking-widest text-[#c5a059] mb-6 border-b border-white/5 pb-4">Specifications</h2>
+            <div className="bg-white/5 backdrop-blur-md p-8 sm:p-12 rounded-3xl shadow-2xl border border-white/10">
+              <h2 className="text-2xl font-serif font-light text-[#c5a059] mb-8 border-b border-white/5 pb-4 uppercase tracking-widest">Specifications</h2>
               <dl className="space-y-4">
                 {[
                   { label: "Fermentation", value: "24 hours" },
