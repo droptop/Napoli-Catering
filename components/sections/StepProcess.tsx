@@ -25,7 +25,7 @@ export const StepProcess: React.FC<StepProcessProps> = ({ heading, steps }) => {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-5 relative z-10">
             {steps.map((step, index) => (
               <div key={index} className="flex flex-col items-center text-center group">
-                <div className="h-[77px] w-[77px] rounded-full bg-white border-2 border-[#c5a059] flex items-center justify-center text-[29px] font-sans font-semibold text-[#c5a059] mb-8 shadow-sm transition-transform group-hover:scale-110">
+                <div className="h-[92px] w-[92px] rounded-full bg-white border-2 border-[#c5a059] flex items-center justify-center text-[35px] font-sans font-semibold text-[#c5a059] mb-8 shadow-sm transition-transform group-hover:scale-110">
                   {index + 1}
                 </div>
                 <h3 className="text-sm font-bold text-zinc-900 mb-4 uppercase tracking-widest leading-tight min-h-[40px] flex items-center justify-center px-2">

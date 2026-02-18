@@ -25,8 +25,8 @@ export const ContactForm = () => {
   if (status === 'success') {
     return (
       <div className="bg-white/5 backdrop-blur-md p-10 text-center border border-[#c5a059]/30 shadow-sm">
-        <div className="mx-auto flex h-[77px] w-[77px] items-center justify-center rounded-full bg-[#c5a059]/10 text-[#c5a059] mb-6">
-          <svg className="h-[38px] w-[38px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div className="mx-auto flex h-[92px] w-[92px] items-center justify-center rounded-full bg-[#c5a059]/10 text-[#c5a059] mb-6">
+          <svg className="h-[46px] w-[46px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
           </svg>
         </div>
