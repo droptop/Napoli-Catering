@@ -10,7 +10,7 @@ export const DemoSection = () => {
       <div className="absolute inset-x-0 bottom-0 h-1/2 z-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent" />
 
       <Container className="relative z-10">
-        <div className="relative z-20 max-w-4xl mx-auto text-center mb-[-80px] sm:mb-[-120px]">
+        <div className="relative z-20 max-w-4xl mx-auto text-center mb-12 sm:mb-16">
           <h2 className="text-4xl font-serif font-light tracking-tight sm:text-6xl mb-6">
             See It. Taste It. Decide.
           </h2>
