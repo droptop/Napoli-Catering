@@ -22,18 +22,17 @@ export const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <section className="relative overflow-hidden pt-32 pb-48 lg:pt-48 lg:pb-64 bg-zinc-950">
-      {/* Premium Background: Wood/Heritage Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fbcc909982e1e49609241be4fcdf9e20d?format=webp&width=1600&height=1200"
-          alt="Napoli Catering Heritage Wood"
-          fill
-          className="object-cover opacity-50 grayscale"
-          priority
-        />
-        {/* Dark Vignette Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/80 to-transparent" />
-      </div>
+      {/* Premium Background: Repeatable Wood Texture */}
+      <div
+        className="absolute inset-0 z-0 opacity-60 grayscale"
+        style={{
+          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F9df4bea3fa854026915b80c60ccba98b?format=webp')`,
+          backgroundRepeat: 'repeat',
+          backgroundSize: '400px'
+        }}
+      />
+      {/* Dark Vignette Overlay */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-zinc-950 via-zinc-950/40 to-transparent" />
 
       <Container className="relative z-10">
         <div className="max-w-3xl">
