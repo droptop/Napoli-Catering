@@ -19,8 +19,8 @@ export const StepProcess: React.FC<StepProcessProps> = ({ heading, steps }) => {
           {heading}
         </h2>
         <div className="relative">
-          {/* Horizontal Dotted Line */}
-          <div className="hidden lg:block absolute top-8 left-0 right-0 h-px border-t-2 border-dashed border-[#c5a059]/40 z-0 mx-12" />
+          {/* Horizontal Dotted Line: Spans from center of first column to center of last column */}
+          <div className="hidden lg:block absolute top-8 left-[10%] right-[10%] h-px border-t-2 border-dashed border-[#c5a059]/40 z-0" />
 
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-5 relative z-10">
             {steps.map((step, index) => (
