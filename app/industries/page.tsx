@@ -122,7 +122,13 @@ export default function IndustriesPage() {
                 Everything we do is focused on hospitality margins and operational simplicity. We don't just sell pizza bases; we sell a more efficient business model for your kitchen.
               </p>
             </div>
-            <div className="bg-white/5 backdrop-blur-md p-10 border border-white/10 shadow-xl">
+            <div className="flex flex-col items-center text-center">
+              <div className="h-[70px] w-[70px] rounded-full border border-[#c5a059] bg-[#c5a059]/10 flex items-center justify-center text-[#c5a059] mb-8 shadow-sm">
+                <svg className="h-[29px] w-[29px] text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.477 0 8.268 2.943 9.542 7-1.274 4.057-5.065 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+              </div>
               <h3 className="text-xl font-serif font-light mb-4 text-[#c5a059] uppercase tracking-widest">Ready to see the difference?</h3>
               <p className="text-zinc-400 mb-8 text-sm font-light">Experience the quality and operational ease firsthand with a live tasting demo.</p>
               <Button href="/book-a-demo" variant="premium" className="w-full">Book a Demo</Button>
