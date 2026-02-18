@@ -12,21 +12,34 @@ export const metadata = getMetadata({
 
 export default function PizzaBasesPage() {
   return (
-    <main>
+    <main className="bg-zinc-950 text-white">
       {/* Overview Section */}
-      <section className="py-24 bg-zinc-50 border-b border-zinc-100">
-        <Container>
+      <section className="py-24 pt-32 relative overflow-hidden">
+        {/* Premium Background: Wood Texture */}
+        <div
+          className="absolute inset-0 z-0 opacity-40 grayscale"
+          style={{
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fa6dc89c6e32041c6a517dcb956241527?format=webp&width=1600&height=1200')`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
+        />
+        {/* Dark Vignette Overlay */}
+        <div className="absolute inset-0 z-0 bg-gradient-to-r from-zinc-950 via-zinc-950/40 to-transparent" />
+
+        <Container className="relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h1 className="text-4xl font-serif font-light tracking-tight text-zinc-900 sm:text-6xl mb-8">
+              <h1 className="text-4xl font-serif font-light tracking-tight text-white sm:text-6xl mb-8 uppercase tracking-widest leading-tight">
                 Technical Overview
               </h1>
-              <p className="text-xl text-zinc-600 leading-relaxed mb-8 font-light">
-                Our bases are not just another convenience product. They are a technical solution for kitchens that demand authenticity without the traditional labor and skill requirements of dough management.
+              <p className="text-xl text-zinc-300 leading-relaxed mb-8 font-light">
+                Our bases are not just another convenience product. They are a technical solution for kitchens that demand authenticity without the traditional labour and skill requirements of dough management.
               </p>
             </div>
-            <div className="bg-white p-8 rounded-3xl border border-[#c5a059]/30 shadow-sm">
-              <h2 className="text-sm font-bold uppercase tracking-widest text-[#c5a059] mb-6 border-b border-zinc-100 pb-4">Specifications</h2>
+            <div className="bg-white/5 backdrop-blur-md p-8 border border-[#c5a059]/30 shadow-sm">
+              <h2 className="text-sm font-bold uppercase tracking-widest text-[#c5a059] mb-6 border-b border-white/5 pb-4">Specifications</h2>
               <dl className="space-y-4">
                 {[
                   { label: "Fermentation", value: "24 hours" },
@@ -37,9 +50,9 @@ export default function PizzaBasesPage() {
                   { label: "Recommended bake temp", value: "240–360°C" },
                   { label: "Origin", value: "Naples, Italy" }
                 ].map((spec, index) => (
-                  <div key={index} className="flex justify-between border-b border-zinc-50 pb-2 last:border-0">
-                    <dt className="text-zinc-500 font-light">{spec.label}</dt>
-                    <dd className="text-zinc-900 font-medium">{spec.value}</dd>
+                  <div key={index} className="flex justify-between border-b border-white/5 pb-2 last:border-0">
+                    <dt className="text-zinc-400 font-light">{spec.label}</dt>
+                    <dd className="text-white font-medium">{spec.value}</dd>
                   </div>
                 ))}
               </dl>
@@ -49,34 +62,42 @@ export default function PizzaBasesPage() {
       </section>
 
       {/* Structure & Performance */}
-      <section className="py-24">
-        <Container>
+      <section className="py-24 relative overflow-hidden bg-zinc-900 border-y border-white/5">
+        <div
+          className="absolute inset-0 z-0 opacity-50 pointer-events-none"
+          style={{
+            backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F911c671c9bd5429ca0699a0004064868?format=webp&width=1600&height=1200')`,
+            backgroundRepeat: 'repeat',
+            backgroundSize: '800px'
+          }}
+        />
+        <Container className="relative z-10">
           <div className="max-w-3xl">
-            <h2 className="text-3xl font-serif font-light tracking-tight text-[#c5a059] sm:text-4xl mb-12">
+            <h2 className="text-3xl font-serif font-light tracking-tight text-[#c5a059] sm:text-4xl mb-12 uppercase tracking-widest">
               Structure & Performance
             </h2>
             <div className="space-y-12">
               {[
-                { 
-                  title: "Crust Structure", 
-                  content: "The characteristic 'cornicione' is achieved through high-hydration dough and a 24-hour fermentation process. Upon baking, it develops the signature airy structure and leopard spotting of an authentic Neapolitan pizza." 
+                {
+                  title: "Crust Structure",
+                  content: "The characteristic 'cornicione' is achieved through high-hydration dough and a 24-hour fermentation process. Upon baking, it develops the signature airy structure and leopard spotting of an authentic Neapolitan pizza."
                 },
-                { 
-                  title: "Texture & Mouthfeel", 
-                  content: "Soft, elastic, and light. The sourdough process ensures a base that is crisp on the outside while remaining tender and moist on the inside." 
+                {
+                  title: "Texture & Mouthfeel",
+                  content: "Soft, elastic, and light. The sourdough process ensures a base that is crisp on the outside while remaining tender and moist on the inside."
                 },
-                { 
-                  title: "Superior Digestibility", 
-                  content: "Extended fermentation breaks down complex starches and gluten proteins, resulting in a product that is significantly easier to digest than rapid-yeast alternatives." 
+                {
+                  title: "Superior Digestibility",
+                  content: "Extended fermentation breaks down complex starches and gluten proteins, resulting in a product that is significantly easier to digest than rapid-yeast alternatives."
                 },
-                { 
-                  title: "High-Heat Performance", 
-                  content: "Our bases are engineered to withstand the intense heat of professional pizza ovens (up to 450°C) without burning or losing structural integrity, while still performing exceptionally in standard 240°C convection ovens." 
+                {
+                  title: "High-Heat Performance",
+                  content: "Our bases are engineered to withstand the intense heat of professional pizza ovens (up to 450°C) without burning or losing structural integrity, while still performing exceptionally in standard 240°C convection ovens."
                 }
               ].map((item, index) => (
                 <div key={index}>
                   <h3 className="text-xl font-bold text-[#c5a059] mb-3 uppercase tracking-widest">{item.title}</h3>
-                  <p className="text-zinc-600 font-light leading-relaxed">{item.content}</p>
+                  <p className="text-white font-light leading-relaxed">{item.content}</p>
                 </div>
               ))}
             </div>
@@ -85,14 +106,14 @@ export default function PizzaBasesPage() {
       </section>
 
       {/* Operational Integration */}
-      <section className="py-24 bg-zinc-50">
+      <section className="py-24 bg-zinc-950">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             <div>
-              <h2 className="text-3xl font-serif font-light tracking-tight text-zinc-900 sm:text-4xl mb-8">
+              <h2 className="text-3xl font-serif font-light tracking-tight text-white sm:text-4xl mb-8 uppercase tracking-widest">
                 Operational Integration
               </h2>
-              <p className="text-zinc-600 font-light mb-8 leading-relaxed">
+              <p className="text-zinc-400 font-light mb-8 leading-relaxed">
                 We design our products for service. Integration into your existing kitchen is seamless, requiring no new infrastructure or specialized staff.
               </p>
             </div>
@@ -104,8 +125,8 @@ export default function PizzaBasesPage() {
                 { title: "Daily Delivery Availability", desc: "Reliable logistics ensure your inventory is maintained without the need for large storage footprints." }
               ].map((point, index) => (
                 <li key={index}>
-                  <h4 className="font-bold text-zinc-900 mb-1 uppercase tracking-widest text-sm">{point.title}</h4>
-                  <p className="text-zinc-500 font-light text-sm">{point.desc}</p>
+                  <h4 className="font-bold text-[#c5a059] mb-1 uppercase tracking-widest text-sm">{point.title}</h4>
+                  <p className="text-zinc-400 font-light text-sm">{point.desc}</p>
                 </li>
               ))}
             </ul>
