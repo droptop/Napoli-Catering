@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
@@ -41,9 +40,6 @@ export const CTASection: React.FC<CTASectionProps> = ({
             <Button href={ctaLink} size="lg" variant="premium">
               {ctaLabel}
             </Button>
-            <Link href="/about" className="text-sm font-semibold leading-6 text-white hover:text-[#c5a059] transition-colors uppercase tracking-widest">
-              Learn about our process <span aria-hidden="true">→</span>
-            </Link>
           </div>
         </div>
       </Container>

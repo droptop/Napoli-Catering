@@ -52,7 +52,7 @@ export default function PizzaBasesPage() {
       <section className="py-24">
         <Container>
           <div className="max-w-3xl">
-            <h2 className="text-3xl font-serif font-light tracking-tight text-zinc-900 sm:text-4xl mb-12">
+            <h2 className="text-3xl font-serif font-light tracking-tight text-[#c5a059] sm:text-4xl mb-12">
               Structure & Performance
             </h2>
             <div className="space-y-12">
@@ -75,7 +75,7 @@ export default function PizzaBasesPage() {
                 }
               ].map((item, index) => (
                 <div key={index}>
-                  <h3 className="text-xl font-bold text-zinc-900 mb-3 uppercase tracking-widest">{item.title}</h3>
+                  <h3 className="text-xl font-bold text-[#c5a059] mb-3 uppercase tracking-widest">{item.title}</h3>
                   <p className="text-zinc-600 font-light leading-relaxed">{item.content}</p>
                 </div>
               ))}
