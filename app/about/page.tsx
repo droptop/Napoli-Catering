@@ -147,8 +147,8 @@ export default function AboutPage() {
                   <div key={index} className="flex items-start gap-6 transition-all duration-300 group">
                     <div className="h-[82px] w-[82px] rounded-full border-2 border-[#c5a059] flex items-center justify-center shrink-0 shadow-lg group-hover:scale-110 transition-transform bg-[#c5a059]/5">
                       {React.isValidElement(item.icon) && (item.icon as any).type === 'img'
-                        ? React.cloneElement(item.icon as React.ReactElement, { className: 'h-[41px] w-auto brightness-0 invert opacity-80 transition-opacity text-white' })
-                        : React.cloneElement(item.icon as React.ReactElement, { className: 'h-[41px] w-[41px] text-white' })}
+                        ? React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, { className: 'h-[41px] w-auto brightness-0 invert opacity-80 transition-opacity text-white' })
+: React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, { className: 'h-[41px] w-[41px] text-white' })}
                     </div>
                     <div>
                       <h3 className="text-[#c5a059] font-bold text-sm uppercase tracking-widest mb-2">{item.title}</h3>
