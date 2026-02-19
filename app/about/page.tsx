@@ -90,7 +90,7 @@ export default function AboutPage() {
                 We believe that authenticity shouldn't be a luxury reserved for the few. Our mission is to empower professional kitchens across the NL to serve true Neapolitan sourdough pizza without the complexity of traditional dough preparation.
               </p>
               <p className="text-zinc-400 text-lg leading-relaxed font-light">
-                By sourcing our bases directly from artisanal producers in <img src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F1f3ff3a8cc6e49aba4388aae53e1217d?format=webp&width=800&height=1200" alt="Naples" className="inline-block h-6 w-auto mx-1 align-middle" /> and managing a specialized ambient supply chain, we ensure every kitchen has access to heritage-grade ingredients.
+                By sourcing our bases directly from artisanal producers in Naples and managing a specialized ambient supply chain, we ensure every kitchen has access to heritage-grade ingredients.
               </p>
             </div>
           </div>
