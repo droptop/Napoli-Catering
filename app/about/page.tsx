@@ -110,10 +110,6 @@ export default function AboutPage() {
                     icon: (
                       <svg className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <circle cx="12" cy="12" r="9" strokeWidth="1.5" />
-                        <path strokeLinecap="round" strokeWidth="1.5" d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6L5.6 18.4" strokeOpacity="0.3" />
-                        <circle cx="8" cy="10" r="1.5" strokeWidth="1" />
-                        <circle cx="15" cy="14" r="1" strokeWidth="1" />
-                        <circle cx="12" cy="12" r="1" strokeWidth="1" />
                       </svg>
                     )
                   },
@@ -131,10 +127,11 @@ export default function AboutPage() {
                     title: "Neapolitan Ingredients",
                     desc: "Full range of top-tier ingredients for an authentic Italian taste.",
                     icon: (
-                      <svg className="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                        <circle cx="12" cy="14" r="3" strokeWidth="1.5" />
-                      </svg>
+                      <img
+                        src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F1f3ff3a8cc6e49aba4388aae53e1217d?format=webp&width=800&height=1200"
+                        alt="Naples Map"
+                        className="h-7 w-auto grayscale brightness-200"
+                      />
                     )
                   },
                   {
