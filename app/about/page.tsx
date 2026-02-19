@@ -172,7 +172,7 @@ export default function AboutPage() {
                     desc: "Helping you optimise your pizza-making process with technical guidance.",
                     icon: (
                       <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 12.728l-3.536-3.536M12 3v4m0 10v4m9-9h-4M7 12H3m8 0a1 1 0 112 0 1 1 0 01-2 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 6.5l-2.5 2.5m1.5-1.5l6-6m-6 6l-9 9M9 12l3 3M17 2l.5 1.5M22 6l-1.5-.5M17 10l-.5-1.5M13 6l1.5.5" />
                       </svg>
                     )
                   },
