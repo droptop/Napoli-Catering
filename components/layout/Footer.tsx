@@ -108,7 +108,6 @@ export const Footer = () => {
               <ul className="mt-4 space-y-2 text-sm text-zinc-500 font-light">
                 <li>Phone: 0657.60.3128</li>
                 <li>Email: sales@napolicateringco.nl</li>
-                <li>Website: napolicateringco.nl</li>
               </ul>
             </div>
           </div>

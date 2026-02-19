@@ -46,10 +46,6 @@ export default function ContactPage() {
                     <span className="text-[#c5a059] text-xs uppercase tracking-widest font-bold">Email:</span>
                     <span>sales@napolicateringco.nl</span>
                   </li>
-                  <li className="flex items-center gap-3">
-                    <span className="text-[#c5a059] text-xs uppercase tracking-widest font-bold">Website:</span>
-                    <span>napolicateringco.nl</span>
-                  </li>
                 </ul>
               </div>
 
