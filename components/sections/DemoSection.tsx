@@ -76,9 +76,9 @@ export const DemoSection = () => {
               <div key={index} className="flex flex-col items-center text-center transition-all duration-300 group">
                 <div className="h-[70px] w-[70px] rounded-full border border-[#c5a059] bg-[#c5a059]/10 flex items-center justify-center text-[#c5a059] mb-6 group-hover:scale-110 transition-transform">
                   {React.isValidElement(item.icon) && item.icon.type === 'img'
-                    ? React.cloneElement(item.icon as React.ReactElement, { className: 'h-[46px] w-auto brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity' })
+                    ? React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, { className: 'h-[46px] w-auto brightness-0 invert opacity-80 group-hover:opacity-100 transition-opacity' })
                     : React.isValidElement(item.icon)
-                      ? React.cloneElement(item.icon as React.ReactElement, { className: 'h-[32px] w-[32px]' })
+                      ? React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, { className: 'h-[32px] w-[32px]' })
                       : item.icon}
                 </div>
                 <h3 className="text-lg font-bold text-[#c5a059] mb-4 uppercase tracking-widest">{item.title}</h3>

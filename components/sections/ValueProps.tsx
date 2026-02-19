@@ -36,8 +36,8 @@ export const ValueProps: React.FC<ValuePropsProps> = ({ heading, items, showSket
               <div className="h-[70px] w-[70px] rounded-full border border-[#c5a059] bg-[#c5a059]/10 flex items-center justify-center text-[#c5a059] mb-8 shadow-sm transition-colors duration-300 group">
                 {item.icon ? (
                   React.isValidElement(item.icon) && (item.icon as any).type === 'img'
-                    ? React.cloneElement(item.icon as React.ReactElement, { className: 'h-[29px] w-auto brightness-0 invert opacity-80 transition-opacity' })
-                    : React.cloneElement(item.icon as React.ReactElement, { className: 'h-[29px] w-[29px]' })
+                    ? React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, { className: 'h-[29px] w-auto brightness-0 invert opacity-80 transition-opacity' })
+                    : React.cloneElement(item.icon as React.ReactElement<{ className?: string }>, { className: 'h-[29px] w-[29px]' })
                 ) : (
                   <svg className="h-[29px] w-[29px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" />
