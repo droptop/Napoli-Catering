@@ -1,10 +1,7 @@
 'use client';
-
 import React from 'react';
-import { BuilderContent, builder } from '@builder.io/sdk-react-nextjs';
+import { BuilderComponent } from '@builder.io/react';
 import { BUILDER_PUBLIC_API_KEY } from '@/lib/builder';
-
-builder.init(BUILDER_PUBLIC_API_KEY);
 
 interface BuilderPageProps {
   content: any;
@@ -13,11 +10,8 @@ interface BuilderPageProps {
 }
 
 export const BuilderPage: React.FC<BuilderPageProps> = ({ content, model, fallback }) => {
-  // If we have content from Builder, render it
-  if (content || builder.editingModel === model) {
-    return <BuilderContent content={content} model={model} />;
+  if (content) {
+    return <BuilderComponent content={content} model={model} apiKey={BUILDER_PUBLIC_API_KEY} />;
   }
-
-  // Otherwise, render the hardcoded fallback
   return <>{fallback}</>;
 };
