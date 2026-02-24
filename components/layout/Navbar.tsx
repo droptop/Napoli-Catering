@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
+import { LanguageSwitcher } from '../ui/LanguageSwitcher';
 
 const navigation = [
   { name: 'Pizza Bases', href: '/pizza-bases' },
@@ -72,7 +73,8 @@ export const Navbar = () => {
             })}
           </div>
 
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:items-center lg:gap-6">
+            <LanguageSwitcher />
             <Button href="/book-a-demo" size="sm" variant="premium">
               Book a Demo
             </Button>
@@ -98,13 +100,17 @@ export const Navbar = () => {
                   >
                     {item.name}
                   </Link>
-                );
-              })}
-              <div className="px-3 py-4">
-                <Button href="/book-a-demo" variant="premium" className="w-full">
-                  Book a Demo
-                </Button>
-              </div>
+              );
+            })}
+            <div className="px-3 py-4 flex items-center justify-between border-b border-white/5">
+              <span className="text-xs font-semibold uppercase tracking-widest text-white/70">Language</span>
+              <LanguageSwitcher />
+            </div>
+            <div className="px-3 py-4">
+              <Button href="/book-a-demo" variant="premium" className="w-full">
+                Book a Demo
+              </Button>
+            </div>
             </div>
           </div>
         )}

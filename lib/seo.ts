@@ -24,8 +24,22 @@ export const getMetadata = ({
     metadataBase: new URL(baseUrl),
     title: fullTitle,
     description,
+    keywords: [
+      "Neapolitan Pizza Bases Netherlands",
+      "Sourdough Pizza Bases Wholesale NL",
+      "Authentic Italian Pizza Supply Amsterdam",
+      "Ambient Pizza Bases Hospitality",
+      "Pizza Oven Supply Netherlands",
+      "Napoli Catering",
+      "Pizza deeg bollen",
+      "Pizza bodems groothandel",
+    ],
     alternates: {
       canonical: url,
+      languages: {
+        'en-NL': `${baseUrl}${path}`,
+        'nl-NL': `${baseUrl}/nl${path}`,
+      },
     },
     openGraph: {
       title: fullTitle,
