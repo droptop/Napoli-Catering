@@ -25,10 +25,11 @@ const products = [
   },
   {
     id: "naples-map",
-    title: "Naples Map",
+    title: "Neapolitan Roots",
     description: "Every product we supply is rooted in the tradition of Naples. We source directly from the heart of Italy to ensure your kitchen delivers an authentic experience.",
     image: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fa633cf2cb0e64697bc2bf093972a6bb8?format=webp&width=800&height=1200",
-    placeholder: false
+    placeholder: false,
+    zoom: true
   },
   {
     id: "neapolitan-ingredients",
@@ -81,7 +82,9 @@ export default function ProductsPage() {
                     <img
                       src={product.image}
                       alt={product.title}
-                      className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                      className={`absolute inset-0 w-full h-full object-cover grayscale transition-all duration-700 ${
+                        product.zoom ? 'scale-[1.15]' : 'group-hover:scale-105'
+                      } group-hover:grayscale-0`}
                     />
                   </div>
                 </div>
