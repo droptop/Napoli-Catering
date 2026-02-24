@@ -82,9 +82,9 @@ export default function ProductsPage() {
                     <img
                       src={product.image}
                       alt={product.title}
-                      className={`absolute inset-0 w-full h-full object-cover grayscale transition-all duration-700 ${
+                      className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${
                         product.zoom ? 'scale-[1.15]' : 'group-hover:scale-105'
-                      } group-hover:grayscale-0`}
+                      }`}
                     />
                   </div>
                 </div>
