@@ -4,6 +4,7 @@ import { Container } from '../ui/Container';
 
 const navigation = {
   solutions: [
+    { name: 'Products', href: '/products' },
     { name: 'Pizza Bases', href: '/pizza-bases' },
     { name: 'Industries', href: '/industries' },
     { name: 'Book a Demo', href: '/book-a-demo' },
