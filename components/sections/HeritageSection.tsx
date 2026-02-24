@@ -25,11 +25,11 @@ export const HeritageSection = () => {
             <p className="text-xl text-zinc-800 font-medium tracking-tight">
               Our bases are produced within that tradition.
             </p>
-            <div className="sm:hidden mt-12 flex justify-center opacity-30 grayscale overflow-hidden">
+            <div className="sm:hidden mt-12 flex justify-center opacity-30 grayscale overflow-hidden px-4">
                <img
                  src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fcfdac20eee0749ec933ad9d776b0491d?format=webp&width=1600&height=1200"
                  alt="Naples Map"
-                 className="max-w-[150%] h-auto shrink-0 -mb-24 scale-125"
+                 className="w-full h-auto"
                />
             </div>
           </div>
