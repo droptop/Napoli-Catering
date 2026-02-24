@@ -38,8 +38,8 @@ export const Footer = () => {
             </p>
           </div>
 
-          <div className="flex gap-4">
-            <div className="flex shrink-0 w-[3px] py-1">
+          <div className="flex gap-4 self-start">
+            <div className="flex shrink-0 w-[3px] py-0.5">
               <div className="w-[1px] h-full bg-[#008C45]" />
               <div className="w-[1px] h-full bg-[#F4F5F0]" />
               <div className="w-[1px] h-full bg-[#CD212A]" />
@@ -58,8 +58,8 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="flex gap-4">
-            <div className="flex shrink-0 w-[3px] py-1">
+          <div className="flex gap-4 self-start">
+            <div className="flex shrink-0 w-[3px] py-0.5">
               <div className="w-[1px] h-full bg-[#008C45]" />
               <div className="w-[1px] h-full bg-[#F4F5F0]" />
               <div className="w-[1px] h-full bg-[#CD212A]" />
@@ -78,8 +78,8 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="flex gap-4">
-            <div className="flex shrink-0 w-[3px] py-1">
+          <div className="flex gap-4 self-start">
+            <div className="flex shrink-0 w-[3px] py-0.5">
               <div className="w-[1px] h-full bg-[#008C45]" />
               <div className="w-[1px] h-full bg-[#F4F5F0]" />
               <div className="w-[1px] h-full bg-[#CD212A]" />
@@ -98,8 +98,8 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="flex gap-4">
-            <div className="flex shrink-0 w-[3px] py-1">
+          <div className="flex gap-4 self-start">
+            <div className="flex shrink-0 w-[3px] py-0.5">
               <div className="w-[1px] h-full bg-[#008C45]" />
               <div className="w-[1px] h-full bg-[#F4F5F0]" />
               <div className="w-[1px] h-full bg-[#CD212A]" />
