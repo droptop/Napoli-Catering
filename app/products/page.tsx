@@ -58,8 +58,20 @@ export default function ProductsPage() {
   return (
     <main className="bg-zinc-950 text-white pt-32">
       {/* Header */}
-      <section className="py-24 border-b border-white/5">
+      <section className="py-24 border-b border-white/5 relative">
         <Container>
+          {/* Italian Flag Ribbon Graphic */}
+          <div className="flex justify-center mb-12">
+            <div className="flex flex-col items-center">
+              <div className="flex gap-1.5">
+                <div className="w-1.5 h-12 bg-[#008C45] shadow-[0_0_15px_rgba(0,140,69,0.3)]" />
+                <div className="w-1.5 h-12 bg-[#F4F5F0] shadow-[0_0_15px_rgba(244,245,240,0.3)]" />
+                <div className="w-1.5 h-12 bg-[#CD212A] shadow-[0_0_15px_rgba(205,33,42,0.3)]" />
+              </div>
+              <div className="w-px h-8 bg-gradient-to-b from-white/20 to-transparent mt-2" />
+            </div>
+          </div>
+
           <h1 className="text-4xl font-serif font-light tracking-tight text-white sm:text-6xl mb-8 uppercase tracking-widest text-center">
             Our Products
           </h1>
