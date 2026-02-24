@@ -182,6 +182,7 @@ export default function PizzaBasesPage() {
         ctaLink="/book-a-demo"
         showSketchBackground
         variant="flat"
+        hideWavySeparators={true}
       />
     </main>
   );

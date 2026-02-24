@@ -12,6 +12,7 @@ interface CTASectionProps {
   showSketchBackground?: boolean;
   variant?: 'default' | 'flat';
   showItalianLine?: boolean;
+  hideWavySeparators?: boolean;
 }
 
 export const CTASection: React.FC<CTASectionProps> = ({
@@ -22,13 +23,14 @@ export const CTASection: React.FC<CTASectionProps> = ({
   showSketchBackground = false,
   variant = 'default',
   showItalianLine = false,
+  hideWavySeparators = false,
 }) => {
   const isFlat = variant === 'flat';
 
   return (
     <section className="py-24">
       <Container>
-        {isFlat && (
+        {isFlat && !hideWavySeparators && (
           <div className="mb-16">
             <WavyItalianSeparator />
           </div>
@@ -81,7 +83,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
           </div>
         </div>
 
-        {isFlat && (
+        {isFlat && !hideWavySeparators && (
           <div className="mt-16">
             <WavyItalianSeparator />
           </div>
