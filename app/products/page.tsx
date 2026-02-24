@@ -13,43 +13,43 @@ const products = [
     id: "dough-balls-bases",
     title: "Dough Balls & Pizza Bases",
     description: "Fresh, high-quality Neapolitan & sourdough options for artisan-style pizzas. Our dough is fermented for 24 hours to ensure perfect structure and digestibility.",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fa6dc89c6e32041c6a517dcb956241527?format=webp&width=1600&height=1200", // Placeholder wood texture/context
-    placeholder: true
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F7e68a6f212ff4a2a86396f3bd9aa75e2?format=webp&width=800&height=1200",
+    placeholder: false
   },
   {
     id: "specialised-ovens",
     title: "Specialised Ovens",
     description: "State-of-the-art equipment designed for the perfect Neapolitan pizza bake. Engineered to reach and maintain the high temperatures required for authentic leopard spotting and airy crusts.",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F4c350f0d3bb94fe2af8a18b297bfd5e8?format=webp&width=800&height=1200", // Placeholder oven icon
-    placeholder: true
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fdba38380ac4c4739ad693f6396bc9dcb?format=webp&width=800&height=1200",
+    placeholder: false
   },
   {
     id: "naples-map",
     title: "Naples Map",
     description: "Every product we supply is rooted in the tradition of Naples. We source directly from the heart of Italy to ensure your kitchen delivers an authentic experience.",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F911c671c9bd5429ca0699a0004064868?format=webp&width=1600&height=1200", // Placeholder sketch/map
-    placeholder: true
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fa633cf2cb0e64697bc2bf093972a6bb8?format=webp&width=800&height=1200",
+    placeholder: false
   },
   {
     id: "neapolitan-ingredients",
     title: "Neapolitan Ingredients",
     description: "Full range of top-tier ingredients for an authentic Italian taste. From San Marzano tomatoes to DOP mozzarella and premium olive oils.",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F18969ee3770449bcbb0d955a4a2b5bdc?format=webp&width=800&height=1200", // Placeholder ingredients
-    placeholder: true
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fcd6a82ee6a4640b79fb9464ec1edce84?format=webp&width=800&height=1200",
+    placeholder: false
   },
   {
     id: "premium-burger-buns",
     title: "Premium Burger Buns",
     description: "High-quality buns for the perfect complement to your menu. Soft, resilient, and designed to hold up to the most demanding burger builds.",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F0bcb4f97bcaf4d8cb8d248239d74092f?format=webp&width=800&height=1200", // Placeholder buns
-    placeholder: true
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F869ed01c9d9c4e1ca22c7ce52f373978?format=webp&width=800&height=1200",
+    placeholder: false
   },
   {
     id: "pizza-bases-last",
     title: "Technical Sourdough Bases",
     description: "Our signature product. 24-hour fermented Neapolitan sourdough bases that provide a technical solution for high-volume hospitality without compromising quality.",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F4787c7b0109d4358ad91fbe68bd58fd0?format=webp&width=800&height=1200", // Placeholder bases
-    placeholder: true
+    image: "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F731928d015f14520b6ebb091ae373c52?format=webp&width=800&height=1200",
+    placeholder: false
   }
 ];
 
@@ -81,12 +81,8 @@ export default function ProductsPage() {
                     <img
                       src={product.image}
                       alt={product.title}
-                      className="absolute inset-0 w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                      className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                     />
-                    {/* Placeholder Badge */}
-                    <div className="absolute top-4 right-4 z-20 bg-[#c5a059]/10 backdrop-blur-md border border-[#c5a059]/20 px-3 py-1">
-                      <span className="text-[10px] font-bold uppercase tracking-widest text-[#c5a059]">Product Showcase</span>
-                    </div>
                   </div>
                 </div>
 

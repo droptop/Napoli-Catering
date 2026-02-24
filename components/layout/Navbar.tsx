@@ -7,8 +7,8 @@ import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
 
 const navigation = [
-  { name: 'Products', href: '/products' },
   { name: 'Pizza Bases', href: '/pizza-bases' },
+  { name: 'Products', href: '/products' },
   { name: 'Industries', href: '/industries' },
   { name: 'Book a Demo', href: '/book-a-demo' },
   { name: 'About', href: '/about' },
