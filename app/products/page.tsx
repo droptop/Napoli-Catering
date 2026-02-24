@@ -77,7 +77,7 @@ export default function ProductsPage() {
               <div className={`grid grid-cols-1 lg:grid-cols-2 gap-16 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                 <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
                   {/* Image Hero Area */}
-                  <div className="relative aspect-[4/3] bg-zinc-900 border border-white/10 group overflow-hidden">
+                  <div className="relative aspect-[4/3] bg-zinc-900 border border-white/10 group overflow-hidden rounded-tr-[50px] rounded-bl-[50px]">
                     <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent z-10" />
                     <img
                       src={product.image}
