@@ -121,15 +121,31 @@ export const DemoForm = () => {
         <label className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-4">
           Products of Interest
         </label>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-6">
           {[
-            { id: 'prod-bases', label: 'Sourdough Pizza Bases' },
-            { id: 'prod-balls', label: 'Fresh Dough Balls' },
-            { id: 'prod-ingredients', label: 'Italian Ingredients' },
-            { id: 'prod-ovens', label: 'Professional Pizza Ovens' },
+            {
+              id: 'prod-bases',
+              label: 'Dough Balls & Pizza Bases',
+              desc: 'Fresh, high-quality Neapolitan & sourdough options for artisan-style pizzas.'
+            },
+            {
+              id: 'prod-ovens',
+              label: 'Specialised Ovens',
+              desc: 'State-of-the-art equipment designed for the perfect Neapolitan pizza bake.'
+            },
+            {
+              id: 'prod-ingredients',
+              label: 'Neapolitan Ingredients',
+              desc: 'Full range of top-tier ingredients for an authentic Italian taste.'
+            },
+            {
+              id: 'prod-buns',
+              label: 'Premium Burger Buns',
+              desc: 'High-quality buns for the perfect complement to your menu.'
+            },
           ].map((product) => (
-            <div key={product.id} className="flex items-center gap-3 group">
-              <div className="relative flex items-center">
+            <div key={product.id} className="flex items-start gap-4 group">
+              <div className="relative flex items-center mt-1">
                 <input
                   type="checkbox"
                   id={product.id}
@@ -149,9 +165,14 @@ export const DemoForm = () => {
               </div>
               <label
                 htmlFor={product.id}
-                className="text-sm font-light text-zinc-300 cursor-pointer group-hover:text-white transition-colors"
+                className="cursor-pointer"
               >
-                {product.label}
+                <span className="block text-sm font-bold text-zinc-200 group-hover:text-white transition-colors mb-0.5">
+                  {product.label}
+                </span>
+                <span className="block text-xs font-light text-zinc-400 leading-relaxed">
+                  {product.desc}
+                </span>
               </label>
             </div>
           ))}
