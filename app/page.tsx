@@ -264,6 +264,7 @@ export default function Home() {
         ctaLabel="Book a Tasting Demo"
         ctaLink="/book-a-demo"
         variant="flat"
+        hideWavySeparators={true}
       />
     </main>
   );
