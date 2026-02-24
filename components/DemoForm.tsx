@@ -117,6 +117,47 @@ export const DemoForm = () => {
         />
       </div>
 
+      <div className="sm:col-span-2 mt-4">
+        <label className="block text-[10px] font-bold uppercase tracking-widest text-[#c5a059] mb-4">
+          Products of Interest
+        </label>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {[
+            { id: 'prod-bases', label: 'Sourdough Pizza Bases' },
+            { id: 'prod-balls', label: 'Fresh Dough Balls' },
+            { id: 'prod-ingredients', label: 'Italian Ingredients' },
+            { id: 'prod-ovens', label: 'Professional Pizza Ovens' },
+          ].map((product) => (
+            <div key={product.id} className="flex items-center gap-3 group">
+              <div className="relative flex items-center">
+                <input
+                  type="checkbox"
+                  id={product.id}
+                  name="products"
+                  value={product.label}
+                  className="peer h-5 w-5 appearance-none border border-white/10 rounded bg-white/5 checked:bg-[#c5a059] checked:border-[#c5a059] transition-all cursor-pointer focus:ring-0"
+                />
+                <svg
+                  className="absolute h-3.5 w-3.5 text-zinc-950 pointer-events-none opacity-0 peer-checked:opacity-100 transition-opacity left-0.5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={4}
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <label
+                htmlFor={product.id}
+                className="text-sm font-light text-zinc-300 cursor-pointer group-hover:text-white transition-colors"
+              >
+                {product.label}
+              </label>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="sm:col-span-2 mt-8">
         <Button
           type="submit"
