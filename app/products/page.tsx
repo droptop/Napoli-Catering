@@ -31,9 +31,9 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative group overflow-hidden rounded-t-[200px] rounded-b-[40px] lg:order-1 shadow-2xl">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fbb750839efbf4ca9b6a8b71f23de36ac?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fbb750839efbf4ca9b6a8b71f23de36ac?format=webp&width=1600"
                 alt="Dough Balls"
-                className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105 transform-gpu"
               />
             </div>
             <div className="lg:order-2">
@@ -59,9 +59,9 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative group overflow-hidden rounded-t-[200px] rounded-b-[40px] lg:order-2 shadow-2xl">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Ff2a337ddf7794c6799341454e34a48ab?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Ff2a337ddf7794c6799341454e34a48ab?format=webp&width=2000"
                 alt="Pizza Ovens"
-                className="w-full h-[600px] object-cover scale-[1.6] object-center transition-transform duration-700 group-hover:scale-[1.7]"
+                className="w-full h-[600px] object-cover scale-[1.6] object-center transition-transform duration-700 group-hover:scale-[1.7] transform-gpu will-change-transform"
               />
             </div>
             <div className="lg:order-1">
@@ -87,9 +87,9 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative group overflow-hidden rounded-t-[200px] rounded-b-[40px] lg:order-1 shadow-2xl">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fc122dbaf5d1f4898b187dde00a154893?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fc122dbaf5d1f4898b187dde00a154893?format=webp&width=1600"
                 alt="Italian Ingredients"
-                className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105 transform-gpu"
               />
             </div>
             <div className="lg:order-2">
@@ -115,9 +115,9 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative group overflow-hidden rounded-t-[200px] rounded-b-[40px] lg:order-2 shadow-2xl">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F982d075d4e834be68b393d5c5a8a65fe?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F982d075d4e834be68b393d5c5a8a65fe?format=webp&width=1600"
                 alt="Burger Buns"
-                className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105 transform-gpu"
               />
             </div>
             <div className="lg:order-1">
@@ -143,9 +143,9 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative group overflow-hidden rounded-t-[200px] rounded-b-[40px] lg:order-1 shadow-2xl">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F196d0d11495543e6aa16c3093471e6a1?format=webp&width=800&height=1200"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F196d0d11495543e6aa16c3093471e6a1?format=webp&width=2400"
                 alt="Naples Map"
-                className="w-full h-[600px] object-cover scale-[3.2] object-center transition-transform duration-700 group-hover:scale-[3.3]"
+                className="w-full h-[600px] object-cover scale-[3.2] object-center transition-transform duration-700 group-hover:scale-[3.3] transform-gpu will-change-transform"
               />
             </div>
             <div className="lg:order-2">
