@@ -20,12 +20,12 @@ export const StepProcess: React.FC<StepProcessProps> = ({ heading, steps }) => {
         </h2>
         <div className="relative">
           {/* Horizontal Dotted Line: Spans from center of first column to center of last column */}
-          <div className="hidden lg:block absolute top-10 left-[10%] right-[10%] h-px border-t-2 border-dashed border-[#c5a059]/40 z-0" />
+          <div className="hidden lg:block absolute top-[30px] left-[10%] right-[10%] h-px border-t-2 border-dashed border-[#c5a059]/40 z-0" />
 
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-5 relative z-10">
             {steps.map((step, index) => (
               <div key={index} className="flex flex-col items-center text-center group">
-                <div className="text-6xl font-serif font-extralight text-[#c5a059] mb-8 transition-transform group-hover:scale-110">
+                <div className="relative inline-flex items-center justify-center bg-white px-6 text-6xl font-serif font-extralight text-[#c5a059] mb-8 transition-transform group-hover:scale-110">
                   {index + 1}
                 </div>
                 <h3 className="text-sm font-bold text-zinc-900 mb-4 uppercase tracking-widest leading-tight min-h-[40px] flex items-center justify-center px-2">
