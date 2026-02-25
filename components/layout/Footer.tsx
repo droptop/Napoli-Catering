@@ -25,7 +25,7 @@ export const Footer = () => {
     <footer className="bg-zinc-950 text-white py-16" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">Footer</h2>
       <Container>
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5 items-start">
           <div className="col-span-2 lg:col-span-1 flex gap-4">
             <div className="flex shrink-0 w-[3px]">
               <div className="w-[1px] h-full bg-[#008C45]" />
