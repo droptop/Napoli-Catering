@@ -36,10 +36,10 @@ export const Footer = () => {
               <Link href="/" className="font-serif text-xl tracking-tight text-white uppercase font-light">
                 NAPOLI <span className="text-[#c5a059]">CATERING CO.</span>
               </Link>
-              <p className="mt-4 text-sm text-zinc-500 leading-6 max-w-xs font-light italic">
+              <p className="mt-4 text-sm text-zinc-400 leading-6 max-w-xs font-light italic">
                 "Your one stop solution for Authentic Neapolitan Pizza"
               </p>
-              <p className="mt-4 text-sm text-zinc-500 leading-6 max-w-xs font-light">
+              <p className="mt-4 text-sm text-zinc-400 leading-6 max-w-xs font-light">
                 Authentic Neapolitan Sourdough Pizza Bases handmade in Naples. Designed for professional kitchens and hospitality operators across the Netherlands.
               </p>
             </div>
@@ -56,7 +56,7 @@ export const Footer = () => {
               <ul className="mt-4 space-y-2">
                 {navigation.solutions.map((item) => (
                   <li key={item.name}>
-                    <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
+                    <Link href={item.href} className="text-sm text-zinc-400 hover:text-[#c5a059] transition-colors font-light">
                       {item.name}
                     </Link>
                   </li>
@@ -76,7 +76,7 @@ export const Footer = () => {
               <ul className="mt-4 space-y-2">
                 {navigation.company.map((item) => (
                   <li key={item.name}>
-                    <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
+                    <Link href={item.href} className="text-sm text-zinc-400 hover:text-[#c5a059] transition-colors font-light">
                       {item.name}
                     </Link>
                   </li>
@@ -96,7 +96,7 @@ export const Footer = () => {
               <ul className="mt-4 space-y-2">
                 {navigation.legal.map((item) => (
                   <li key={item.name}>
-                    <Link href={item.href} className="text-sm text-zinc-500 hover:text-[#c5a059] transition-colors font-light">
+                    <Link href={item.href} className="text-sm text-zinc-400 hover:text-[#c5a059] transition-colors font-light">
                       {item.name}
                     </Link>
                   </li>
@@ -113,7 +113,7 @@ export const Footer = () => {
             </div>
             <div>
               <h3 className="text-xs font-semibold text-white uppercase tracking-widest">Contact</h3>
-              <ul className="mt-4 space-y-2 text-sm text-zinc-500 font-light">
+              <ul className="mt-4 space-y-2 text-sm text-zinc-400 font-light">
                 <li>Phone: 0657.60.3128</li>
                 <li>Email: sales@napolicateringco.nl</li>
               </ul>
@@ -121,14 +121,14 @@ export const Footer = () => {
           </div>
         </div>
         
-        <div className="mt-16 pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-zinc-500">
+        <div className="mt-16 pt-8 border-t border-zinc-700 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-xs text-zinc-400">
             &copy; {new Date().getFullYear()} Napoli Catering Co. B.V. Registered in the Netherlands.
           </p>
-          <p className="text-xs text-zinc-500">
+          <p className="text-xs text-zinc-400">
             Site by <a href="https://www.tinkertorium.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#c5a059] transition-colors">TINKERTORIUM</a>
           </p>
-          <p className="text-xs text-zinc-500">
+          <p className="text-xs text-zinc-400">
             Proudly serving pizzerias and restaurants across the NL.
           </p>
         </div>
