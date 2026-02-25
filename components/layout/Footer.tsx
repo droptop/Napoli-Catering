@@ -118,6 +118,9 @@ export const Footer = () => {
             &copy; {new Date().getFullYear()} Napoli Catering Co. B.V. Registered in the Netherlands.
           </p>
           <p className="text-xs text-zinc-500">
+            Site by <a href="https://www.tinkertorium.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#c5a059] transition-colors">TINKERTORIUM</a>
+          </p>
+          <p className="text-xs text-zinc-500">
             Proudly serving pizzerias and restaurants across the NL.
           </p>
         </div>
