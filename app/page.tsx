@@ -10,7 +10,6 @@ import { HeritageSection } from "@/components/sections/HeritageSection";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { FAQ } from "@/components/sections/FAQ";
 import { CTASection } from "@/components/sections/CTASection";
-import { WavyItalianSeparator } from "@/components/ui/WavyItalianSeparator";
 import { OrganizationJsonLd, LocalBusinessJsonLd } from "@/components/JsonLd";
 import { Container } from "@/components/ui/Container";
 import Link from "next/link";
@@ -251,10 +250,6 @@ export default function Home() {
         </Container>
       </section>
       
-      {/* Section 9 – Neapolitan Roots */}
-      <div className="bg-zinc-950 py-12">
-        <WavyItalianSeparator />
-      </div>
       <HeritageSection />
 
       {/* Section 10 – Final CTA */}
