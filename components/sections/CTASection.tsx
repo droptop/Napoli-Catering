@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
-import { WavyItalianSeparator } from '../ui/WavyItalianSeparator';
 
 interface CTASectionProps {
   title: string;
@@ -28,12 +27,6 @@ export const CTASection: React.FC<CTASectionProps> = ({
   return (
     <section className="py-24">
       <Container>
-        {isFlat && (
-          <div className="mb-16">
-            <WavyItalianSeparator />
-          </div>
-        )}
-
         <div className={`relative overflow-hidden ${isFlat ? 'bg-transparent border-none shadow-none' : 'rounded-3xl bg-zinc-950 px-8 py-20 shadow-2xl sm:px-16 border border-zinc-800'}`}>
           {!isFlat && (
             <>
@@ -73,19 +66,8 @@ export const CTASection: React.FC<CTASectionProps> = ({
                 {ctaLabel}
               </Button>
             </div>
-            {showItalianLine && (
-              <div className="mt-10">
-                <WavyItalianSeparator />
-              </div>
-            )}
           </div>
         </div>
-
-        {isFlat && (
-          <div className="mt-16">
-            <WavyItalianSeparator />
-          </div>
-        )}
       </Container>
     </section>
   );

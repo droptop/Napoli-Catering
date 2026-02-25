@@ -2,7 +2,6 @@ import React from 'react';
 import { Container } from "@/components/ui/Container";
 import { CTASection } from "@/components/sections/CTASection";
 import { Button } from "@/components/ui/Button";
-import { WavyItalianSeparator } from "@/components/ui/WavyItalianSeparator";
 import { getMetadata } from "@/lib/seo";
 
 export const metadata = getMetadata({
@@ -102,11 +101,6 @@ export default function IndustriesPage() {
                     )}
                   </div>
                 </div>
-                {index < industries.length - 1 && (
-                  <div className="flex justify-center py-16">
-                    <WavyItalianSeparator />
-                  </div>
-                )}
               </React.Fragment>
             ))}
           </div>

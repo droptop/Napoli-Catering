@@ -5,6 +5,7 @@ import { Container } from '../ui/Container';
 const navigation = {
   solutions: [
     { name: 'Pizza Bases', href: '/pizza-bases' },
+    { name: 'Products', href: '/products' },
     { name: 'Industries', href: '/industries' },
     { name: 'Book a Demo', href: '/book-a-demo' },
   ],
@@ -25,20 +26,27 @@ export const Footer = () => {
       <h2 id="footer-heading" className="sr-only">Footer</h2>
       <Container>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
-          <div className="col-span-2 lg:col-span-1">
-            <Link href="/" className="font-serif text-xl tracking-tight text-white uppercase font-light">
-              NAPOLI <span className="text-[#c5a059]">CATERING CO.</span>
-            </Link>
-            <p className="mt-4 text-sm text-zinc-500 leading-6 max-w-xs font-light italic">
-              "Your one stop solution for Authentic Neapolitan Pizza"
-            </p>
-            <p className="mt-4 text-sm text-zinc-500 leading-6 max-w-xs font-light">
-              Authentic Neapolitan Sourdough Pizza Bases handmade in Naples. Designed for professional kitchens and hospitality operators across the Netherlands.
-            </p>
+          <div className="col-span-2 lg:col-span-1 flex gap-4">
+            <div className="flex shrink-0 w-[3px]">
+              <div className="w-[1px] h-full bg-[#008C45]" />
+              <div className="w-[1px] h-full bg-[#F4F5F0]" />
+              <div className="w-[1px] h-full bg-[#CD212A]" />
+            </div>
+            <div>
+              <Link href="/" className="font-serif text-xl tracking-tight text-white uppercase font-light">
+                NAPOLI <span className="text-[#c5a059]">CATERING CO.</span>
+              </Link>
+              <p className="mt-4 text-sm text-zinc-500 leading-6 max-w-xs font-light italic">
+                "Your one stop solution for Authentic Neapolitan Pizza"
+              </p>
+              <p className="mt-4 text-sm text-zinc-500 leading-6 max-w-xs font-light">
+                Authentic Neapolitan Sourdough Pizza Bases handmade in Naples. Designed for professional kitchens and hospitality operators across the Netherlands.
+              </p>
+            </div>
           </div>
 
           <div className="flex gap-4">
-            <div className="flex shrink-0 w-[3px] py-1">
+            <div className="flex shrink-0 w-[3px]">
               <div className="w-[1px] h-full bg-[#008C45]" />
               <div className="w-[1px] h-full bg-[#F4F5F0]" />
               <div className="w-[1px] h-full bg-[#CD212A]" />
@@ -58,7 +66,7 @@ export const Footer = () => {
           </div>
 
           <div className="flex gap-4">
-            <div className="flex shrink-0 w-[3px] py-1">
+            <div className="flex shrink-0 w-[3px]">
               <div className="w-[1px] h-full bg-[#008C45]" />
               <div className="w-[1px] h-full bg-[#F4F5F0]" />
               <div className="w-[1px] h-full bg-[#CD212A]" />
@@ -78,7 +86,7 @@ export const Footer = () => {
           </div>
 
           <div className="flex gap-4">
-            <div className="flex shrink-0 w-[3px] py-1">
+            <div className="flex shrink-0 w-[3px]">
               <div className="w-[1px] h-full bg-[#008C45]" />
               <div className="w-[1px] h-full bg-[#F4F5F0]" />
               <div className="w-[1px] h-full bg-[#CD212A]" />
@@ -98,7 +106,7 @@ export const Footer = () => {
           </div>
 
           <div className="flex gap-4">
-            <div className="flex shrink-0 w-[3px] py-1">
+            <div className="flex shrink-0 w-[3px]">
               <div className="w-[1px] h-full bg-[#008C45]" />
               <div className="w-[1px] h-full bg-[#F4F5F0]" />
               <div className="w-[1px] h-full bg-[#CD212A]" />
@@ -116,6 +124,9 @@ export const Footer = () => {
         <div className="mt-16 pt-8 border-t border-zinc-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-zinc-500">
             &copy; {new Date().getFullYear()} Napoli Catering Co. B.V. Registered in the Netherlands.
+          </p>
+          <p className="text-xs text-zinc-500">
+            Site by <a href="https://www.tinkertorium.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#c5a059] transition-colors">TINKERTORIUM</a>
           </p>
           <p className="text-xs text-zinc-500">
             Proudly serving pizzerias and restaurants across the NL.
