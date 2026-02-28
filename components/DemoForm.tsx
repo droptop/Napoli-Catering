@@ -31,12 +31,12 @@ export const DemoForm = () => {
           </svg>
         </div>
         <h3 className="text-2xl font-serif font-light text-white mb-4 uppercase tracking-widest">Request Received</h3>
-        <p className="text-zinc-400 font-light leading-relaxed">
+        <p className="text-zinc-200 font-light leading-relaxed">
           Thank you for your interest. A specialist from Napoli Catering Co. will contact you within 24 hours to schedule your live tasting demonstration.
         </p>
         <Button
           variant="outline"
-          className="mt-8 border-white/10 text-white hover:bg-white/5 uppercase tracking-widest text-xs font-bold"
+          className="mt-8 border-white/20 !text-white hover:bg-white/10 uppercase tracking-widest text-xs font-bold"
           onClick={() => setStatus('idle')}
         >
           Request another demo

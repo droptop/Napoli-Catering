@@ -4,10 +4,10 @@ import { Container } from '../ui/Container';
 export const HeritageSection = () => {
   return (
     <section className="py-32 bg-[#fcfaf7] overflow-hidden relative">
-      <div className="absolute inset-0 z-0 opacity-[0.20] grayscale pointer-events-none hidden sm:block"
+      <div className="absolute inset-0 z-0 opacity-10 pointer-events-none hidden sm:block"
         style={{
-          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fcfdac20eee0749ec933ad9d776b0491d?format=webp&width=1600&height=1200')`,
-          backgroundSize: '40%',
+          backgroundImage: `url('https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F6c0a0cbecc0543e8b26034056854f013?format=webp&width=1600&height=1200')`,
+          backgroundSize: 'contain',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
@@ -25,11 +25,11 @@ export const HeritageSection = () => {
             <p className="text-xl text-zinc-800 font-medium tracking-tight">
               Our bases are produced within that tradition.
             </p>
-            <div className="sm:hidden mt-12 flex justify-center opacity-30 grayscale overflow-hidden">
+            <div className="sm:hidden mt-8 flex justify-center opacity-40 grayscale-0">
                <img
-                 src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fcfdac20eee0749ec933ad9d776b0491d?format=webp&width=1600&height=1200"
+                 src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F6c0a0cbecc0543e8b26034056854f013?format=webp&width=800&height=1200"
                  alt="Naples Map"
-                 className="max-w-[150%] h-auto shrink-0 -mb-24 scale-125"
+                 className="w-full max-w-xs h-auto"
                />
             </div>
           </div>

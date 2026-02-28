@@ -22,7 +22,7 @@ export const OrganizationJsonLd = () => {
         "@type": "Organization",
         "name": "Napoli Catering Co.",
         "url": "https://napolicateringco.nl",
-        "logo": "https://napolicateringco.nl/logo.png",
+        "logo": "https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F7cf744910c8344faa32768637df3ef98?format=webp&width=800&height=1200",
         "sameAs": ["https://www.linkedin.com/company/napoli-catering-co"],
         "contactPoint": {
           "@type": "ContactPoint",

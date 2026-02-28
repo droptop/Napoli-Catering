@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
+import { AnnouncementBar } from './AnnouncementBar';
 
 const navigation = [
   { name: 'Pizza Bases', href: '/pizza-bases' },
@@ -20,14 +21,24 @@ export const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black">
+    <header className="fixed inset-x-0 top-0 z-50 bg-black">
       <Container>
-        <nav className="flex items-center justify-between py-4" aria-label="Global">
+        <nav className="flex items-center justify-between py-4 border-b border-white/10 lg:border-none" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
-              <span className="font-serif text-xl tracking-tight text-white uppercase font-light">
-                NAPOLI <span className="text-[#c5a059]">CATERING CO.</span>
-              </span>
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F7cf744910c8344faa32768637df3ef98?format=webp&width=100"
+                alt="Napoli Logo"
+                className="h-7 w-auto"
+              />
+              <div className="flex flex-col leading-[0.9]">
+                <span className="font-serif text-xl tracking-tight text-white uppercase font-light">
+                  NAPOLI
+                </span>
+                <span className="font-sans text-[9px] tracking-[0.15em] text-[#c5a059] uppercase font-bold mt-1">
+                  CATERING CO.
+                </span>
+              </div>
             </Link>
           </div>
 
@@ -109,6 +120,8 @@ export const Navbar = () => {
           </div>
         )}
       </Container>
+
+      <AnnouncementBar />
     </header>
   );
 };

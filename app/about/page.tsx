@@ -79,9 +79,9 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative flex items-center justify-center">
                <img
-                 src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F1f3ff3a8cc6e49aba4388aae53e1217d?format=webp&width=800&height=1200"
+                 src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F6c0a0cbecc0543e8b26034056854f013?format=webp&width=800&height=1200"
                  alt="Naples Map"
-                 className="max-w-[80%] h-auto"
+                 className="max-w-[80%] h-auto opacity-80"
                />
             </div>
             <div className="lg:border-l lg:border-[#c5a059] lg:pl-16">
@@ -128,7 +128,7 @@ export default function AboutPage() {
                     desc: "Full range of top-tier ingredients for an authentic Italian taste.",
                     icon: (
                       <img
-                        src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F1f3ff3a8cc6e49aba4388aae53e1217d?format=webp&width=800&height=1200"
+                        src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F6c0a0cbecc0543e8b26034056854f013?format=webp&width=800&height=1200"
                         alt="Naples Map"
                         className="h-7 w-auto grayscale brightness-200"
                       />
