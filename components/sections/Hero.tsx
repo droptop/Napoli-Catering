@@ -35,8 +35,8 @@ export const Hero: React.FC<HeroProps> = ({
       {/* Dark Vignette Overlay */}
       <div className="absolute inset-0 z-0 bg-gradient-to-r from-zinc-950 via-zinc-950/40 to-transparent" />
 
-      {/* Pizza Image: Higher and overlapping text on mobile */}
-      <div className="absolute right-0 top-[18%] lg:top-1/2 -translate-y-1/2 translate-x-[45%] lg:translate-x-1/2 w-[28rem] lg:w-[52.8rem] h-[28rem] lg:h-[52.8rem] z-[1] pointer-events-none transition-all duration-1000 ease-out">
+      {/* Pizza Image: Nudged lower on mobile */}
+      <div className="absolute right-0 top-[calc(18%+100px)] lg:top-1/2 -translate-y-1/2 translate-x-[45%] lg:translate-x-1/2 w-[28rem] lg:w-[52.8rem] h-[28rem] lg:h-[52.8rem] z-[1] pointer-events-none transition-all duration-1000 ease-out">
         <Image
           src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2Fa2aa5fa664af411ab2253dbe5869151e?format=webp&width=1200&height=1200"
           alt="Our Pizza Base"
