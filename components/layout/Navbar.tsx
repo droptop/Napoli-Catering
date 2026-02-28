@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Container } from '../ui/Container';
 import { Button } from '../ui/Button';
+import { AnnouncementBar } from './AnnouncementBar';
 
 const navigation = [
   { name: 'Pizza Bases', href: '/pizza-bases' },
@@ -20,9 +21,9 @@ export const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-black">
+    <header className="fixed inset-x-0 top-0 z-50 bg-black">
       <Container>
-        <nav className="flex items-center justify-between py-4" aria-label="Global">
+        <nav className="flex items-center justify-between py-4 border-b border-white/10 lg:border-none" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
               <span className="font-serif text-xl tracking-tight text-white uppercase font-light">
@@ -109,6 +110,8 @@ export const Navbar = () => {
           </div>
         )}
       </Container>
+
+      <AnnouncementBar />
     </header>
   );
 };

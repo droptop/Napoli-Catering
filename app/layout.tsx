@@ -36,7 +36,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased bg-background text-zinc-900`}
       >
         <Navbar />
-        <div className="pt-20">
+        <div className="pt-32">
           {children}
         </div>
         <Footer />
