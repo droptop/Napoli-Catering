@@ -29,9 +29,9 @@ export const Navbar = () => {
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F7cf744910c8344faa32768637df3ef98?format=webp&width=100"
                 alt="Napoli Logo"
-                className="h-8 w-auto"
+                className="h-6 w-auto"
               />
-              <span className="font-serif text-xl tracking-tight text-white uppercase font-light">
+              <span className="font-serif text-xl tracking-tight text-white uppercase font-light whitespace-nowrap">
                 NAPOLI <span className="text-[#c5a059]">CATERING CO.</span>
               </span>
             </Link>
