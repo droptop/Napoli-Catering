@@ -143,9 +143,9 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="relative group overflow-hidden rounded-t-[200px] rounded-b-[40px] lg:order-1 shadow-2xl">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F196d0d11495543e6aa16c3093471e6a1?format=webp&width=2400"
-                alt="Naples Map"
-                className="w-full h-[600px] object-cover scale-[3.2] object-center transition-transform duration-700 group-hover:scale-[3.3] transform-gpu will-change-transform"
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F84f2fc1c5d9741f5b9dce1e478ebefc3?format=webp&width=800&height=1200"
+                alt="Traditional Pizza Makers"
+                className="w-full h-[600px] object-cover transition-transform duration-700 group-hover:scale-105 transform-gpu"
               />
             </div>
             <div className="lg:order-2">
