@@ -33,13 +33,20 @@ export const Footer = () => {
               <div className="w-[1px] h-full bg-[#CD212A]" />
             </div>
             <div>
-              <Link href="/" className="font-serif text-xl tracking-tight text-white uppercase font-light flex items-center gap-3 whitespace-nowrap">
+              <Link href="/" className="flex items-center gap-3">
                 <img
                   src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F7cf744910c8344faa32768637df3ef98?format=webp&width=100"
                   alt="Napoli Logo"
-                  className="h-6 w-auto"
+                  className="h-7 w-auto"
                 />
-                <span>NAPOLI <span className="text-[#c5a059]">CATERING CO.</span></span>
+                <div className="flex flex-col leading-[0.9]">
+                  <span className="font-serif text-xl tracking-tight text-white uppercase font-light">
+                    NAPOLI
+                  </span>
+                  <span className="font-sans text-[9px] tracking-[0.15em] text-[#c5a059] uppercase font-bold mt-1">
+                    CATERING CO.
+                  </span>
+                </div>
               </Link>
               <p className="mt-4 text-sm text-zinc-400 leading-6 max-w-xs font-light italic">
                 "Your one stop solution for Authentic Neapolitan Pizza"
