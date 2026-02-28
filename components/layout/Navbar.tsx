@@ -26,6 +26,11 @@ export const Navbar = () => {
         <nav className="flex items-center justify-between py-4 border-b border-white/10 lg:border-none" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-3">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fa81fac9c3bae4b51ace81c3349c8dc9d%2F7cf744910c8344faa32768637df3ef98?format=webp&width=100"
+                alt="Napoli Logo"
+                className="h-8 w-auto"
+              />
               <span className="font-serif text-xl tracking-tight text-white uppercase font-light">
                 NAPOLI <span className="text-[#c5a059]">CATERING CO.</span>
               </span>
