@@ -54,7 +54,7 @@ export const Hero: React.FC<HeroProps> = ({
               <div className="w-[2px] bg-[#F4F5F0]" />
               <div className="w-[2px] bg-[#CD212A]" />
             </div>
-            <h1 className="font-serif text-5xl font-light tracking-tight text-white sm:text-6xl lg:text-7xl leading-[1.05]">
+            <h1 className="font-serif text-5xl font-light tracking-tight text-white sm:text-6xl lg:text-7xl leading-[1.05] drop-shadow-[0_4px_12px_rgba(0,0,0,0.5)]">
               {title}
             </h1>
           </div>
